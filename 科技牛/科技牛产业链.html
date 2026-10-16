@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>科技牛产业链 · A股映射与跟踪指标</title>
+  <style>
+    :root {
+      --bg: #f6f4ef;
+      --panel: #ffffff;
+      --text: #1a1a1a;
+      --muted: #5c5c5c;
+      --line: #e4e0d8;
+      --accent: #0f5c4c;
+      --accent-soft: #e6f2ef;
+      --core: #0f5c4c;
+      --strong: #9a5b12;
+      --flex: #3d5a80;
+      --chip: #eef1f0;
+      --shadow: 0 1px 0 rgba(0,0,0,.04);
+      --side-w: 240px;
+      --font: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: var(--font); }
+    body { min-height: 100vh; }
+    a { color: var(--accent); }
+
+    .layout {
+      display: grid;
+      grid-template-columns: var(--side-w) 1fr;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow: auto;
+      background: #1f2a27;
+      color: #e8eeeb;
+      padding: 20px 14px 28px;
+      border-right: 1px solid #16201d;
+    }
+    .sidebar h1 {
+      font-size: 15px;
+      font-weight: 650;
+      margin: 0 0 4px;
+      letter-spacing: .02em;
+    }
+    .sidebar .sub {
+      font-size: 12px;
+      color: #9aaca4;
+      margin-bottom: 16px;
+      line-height: 1.45;
+    }
+    .nav-btn {
+      display: block;
+      width: 100%;
+      text-align: left;
+      border: 0;
+      background: transparent;
+      color: #d5e0db;
+      padding: 9px 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 13px;
+      margin-bottom: 4px;
+      font-family: inherit;
+    }
+    .nav-btn:hover { background: rgba(255,255,255,.06); }
+    .nav-btn.active {
+      background: var(--accent);
+      color: #fff;
+      font-weight: 600;
+    }
+    .nav-btn .tag {
+      display: inline-block;
+      font-size: 10px;
+      opacity: .75;
+      margin-left: 6px;
+    }
+    .side-foot {
+      margin-top: 18px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(255,255,255,.08);
+      font-size: 11px;
+      color: #8a9b94;
+      line-height: 1.5;
+    }
+
+    .main {
+      padding: 24px 28px 48px;
+      max-width: 980px;
+    }
+
+    .hero {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 20px 22px;
+      margin-bottom: 18px;
+      box-shadow: var(--shadow);
+    }
+    .hero h2 { margin: 0 0 8px; font-size: 22px; }
+    .hero p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.6; }
+    .motto {
+      margin-top: 12px;
+      padding: 10px 12px;
+      background: var(--accent-soft);
+      border-radius: 8px;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.55;
+    }
+
+    .pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+    .pill {
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--chip);
+      color: var(--muted);
+      border: 1px solid var(--line);
+    }
+    .pill.core { background: #e7f3ef; color: var(--core); border-color: #cfe5dd; }
+    .pill.strong { background: #f8efdf; color: var(--strong); border-color: #efd9b5; }
+    .pill.flex { background: #e8eef5; color: var(--flex); border-color: #c9d6e6; }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 18px 20px;
+      margin-bottom: 14px;
+      box-shadow: var(--shadow);
+    }
+    .card h3 {
+      margin: 0 0 12px;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .one-liner {
+      font-size: 14px;
+      line-height: 1.65;
+      margin: 0 0 14px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: 9px 8px;
+      text-align: left;
+      vertical-align: top;
+      line-height: 1.45;
+    }
+    th {
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 12px;
+      background: #faf9f6;
+    }
+    tr:last-child td { border-bottom: 0; }
+
+    .seg-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .seg-tab {
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--text);
+      border-radius: 8px;
+      padding: 7px 11px;
+      font-size: 12px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .seg-tab:hover { border-color: #b9cfc7; }
+    .seg-tab.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .seg-detail {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px 16px;
+      background: #fbfaf7;
+    }
+    .seg-detail .title {
+      font-size: 15px;
+      font-weight: 650;
+      margin-bottom: 6px;
+    }
+    .meta { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
+    .kv { margin: 0 0 8px; font-size: 13px; line-height: 1.55; }
+    .kv b { color: var(--muted); font-weight: 600; margin-right: 6px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+    .chip {
+      font-size: 12px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 3px 8px;
+      color: var(--text);
+    }
+
+    .checklist { margin: 0; padding-left: 18px; }
+    .checklist li { margin-bottom: 6px; font-size: 13px; line-height: 1.5; color: var(--text); }
+
+    .flow {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 12px;
+      line-height: 1.7;
+      white-space: pre-wrap;
+      background: #111816;
+      color: #d7e6df;
+      border-radius: 10px;
+      padding: 12px 14px;
+      overflow: auto;
+    }
+
+    .disclaimer {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 8px;
+    }
+
+    .overview-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+    .ov-item {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 12px;
+      background: #fff;
+      cursor: pointer;
+      text-align: left;
+      font-family: inherit;
+    }
+    .ov-item:hover { border-color: #b9cfc7; background: var(--accent-soft); }
+    .ov-item .n { font-weight: 650; font-size: 13px; margin-bottom: 4px; }
+    .ov-item .d { font-size: 12px; color: var(--muted); line-height: 1.45; }
+
+    @media (max-width: 860px) {
+      .layout { grid-template-columns: 1fr; }
+      .sidebar {
+        position: relative;
+        height: auto;
+        max-height: none;
+      }
+      .overview-grid { grid-template-columns: 1fr; }
+      .main { padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <h1>科技牛产业链</h1>
+      <div class="sub">点左侧切换细分<br/>点环节看映射与指标</div>
+      <button class="nav-btn active" data-id="overview">总览</button>
+      <div id="nav-list"></div>
+      <div class="side-foot">整理：2026-10-16<br/>仅研究梳理，非投资建议</div>
+    </aside>
+
+    <main class="main" id="app"></main>
+  </div>
+
+  <script>
+    const CHAINS = [
+      {
+        id: "compute",
+        title: "AI 算力芯片",
+        necessity: "核心刚需",
+        oneLiner: "海外定生态，国产看替代；A股很少直接映射高端GPU，更多看服务器、配套与国产算力。",
+        priority: [
+          ["一阶", "国产算力芯片/模组", "海光信息、寒武纪、龙芯中科等"],
+          ["一阶配套", "AI服务器整机", "工业富联、中科曙光、浪潮信息、紫光股份"],
+          ["二阶", "芯片设计/IP/EDA周边", "芯原股份、华大九天、广立微、概伦电子"],
+          ["三阶", "先进封装与材料配套", "见「先进封装」链条"],
+        ],
+        flow: `上游：EDA / IP / 先进制程代工 / 设备材料
+        ↓
+中游：AI GPU / ASIC / NPU（海外主导 + 国产替代）
+        ↓
+下游：AI服务器整机 → 云厂商/政企智算集群 → 模型训练推理`,
+        segs: [
+          {
+            name: "国产AI芯片 / GPU / NPU",
+            layer: "中游核心",
+            ai: "最强",
+            logic: "训练/推理芯片本体。A股以国产替代为主，生态与良率是关键。",
+            names: ["海光信息", "寒武纪", "龙芯中科", "景嘉微（偏图形）"],
+            metrics: ["大客户订单", "推理/训练芯片出货", "软件生态成熟度", "毛利率", "库存与流片节奏"],
+            note: "高端训练仍高度依赖海外GPU；A股弹性更多来自国产导入节奏。",
+          },
+          {
+            name: "AI服务器 / 整机代工",
+            layer: "下游整机",
+            ai: "最强",
+            logic: "芯片落地的销售形态。云厂与政企招标能见度高。",
+            names: ["工业富联", "中科曙光", "浪潮信息", "紫光股份", "拓维信息"],
+            metrics: ["云厂CapEx", "AI服务器出货", "国产芯片搭载率", "毛利率", "交付周期"],
+            note: "订单强，但利润率看供应链与竞争。",
+          },
+          {
+            name: "板卡 / 模组 / 互联配套",
+            layer: "中游配套",
+            ai: "强",
+            logic: "加速卡、OAM模组、高速连接器等把芯片做成可部署单元。",
+            names: ["华丰科技", "鼎通科技", "瑞可达"],
+            metrics: ["加速卡出货", "连接器单机价值量", "认证进度", "产能利用率"],
+            note: "连接器常与服务器/液冷一起看。",
+          },
+          {
+            name: "EDA / IP / 设计服务",
+            layer: "上游",
+            ai: "中",
+            logic: "造芯必备工具链；国产替代长逻辑，短弹性弱于硬件放量。",
+            names: ["华大九天", "广立微", "概伦电子", "芯原股份"],
+            metrics: ["国产EDA导入", "晶圆厂/设计公司CapEx", "新工具验证", "经常性收入占比"],
+            note: "偏长期国产替代，不是景气脉冲主线。",
+          },
+        ],
+        timeline: [
+          ["领先", "云厂CapEx、国产大模型招采", "决定算力需求上限"],
+          ["同步", "芯片出货、服务器交付、ASP", "验证景气兑现"],
+          ["滞后", "软件生态、生态伙伴数量", "决定国产可持续份额"],
+          ["风险", "出口管制、生态割裂、价格战", "业绩与估值双杀点"],
+        ],
+        checklist: [
+          "云厂/政企算力预算是否还在加？",
+          "国产芯片是否进入规模化推理部署？",
+          "整机厂AI服务器收入占比与毛利？",
+          "有没有被出口管制或供应链卡死？",
+        ],
+      },
+      {
+        id: "memory",
+        title: "存储 HBM/DRAM/NAND",
+        necessity: "核心刚需",
+        oneLiner: "HBM是AI卡命门但本体在海外；A股看模组、封测、设备材料与部分DRAM/NAND国产化。",
+        priority: [
+          ["一阶观察", "HBM需求→服务器内存/SSD", "海外原厂价格与出货（领先指标）"],
+          ["一阶A股", "存储模组 / 企业级SSD", "江波龙、佰维存储、德明利、香农芯创"],
+          ["二阶", "存储芯片设计/制造", "兆易创新、北京君正、澜起科技"],
+          ["三阶", "封测设备材料", "见设备材料与先进封装"],
+        ],
+        flow: `上游：硅片 / 设备 / TSV与堆叠材料 / 特气特化
+        ↓
+中游：HBM（海外）/ DDR5 / 企业级NAND / 模组与主控
+        ↓
+下游：AI GPU模组 → 服务器内存条 → 数据中心SSD`,
+        segs: [
+          {
+            name: "HBM 需求观察层",
+            layer: "核心但难直投",
+            ai: "最强",
+            logic: "HBM直接限制高端GPU出货；A股难直接买到SK海力士/三星HBM。",
+            names: ["作指标：SK Hynix / Samsung / Micron"],
+            metrics: ["HBM产能", "HBM3E/HBM4进度", "GPU配比", "现货溢价", "原厂扩产指引"],
+            note: "把它当领先指标，而不是A股主映射。",
+          },
+          {
+            name: "服务器 DRAM / 内存接口",
+            layer: "中游",
+            ai: "最强",
+            logic: "AI服务器带动DDR5容量与速率升级；接口芯片是国产亮点。",
+            names: ["澜起科技", "聚辰股份", "兆易创新（部分）", "北京君正"],
+            metrics: ["DDR5渗透率", "服务器内存搭载量", "内存接口芯片出货", "DRAM现货价", "渠道库存"],
+            note: "澜起是A股存储链里与服务器绑定最紧的设计标的之一。",
+          },
+          {
+            name: "模组 / 企业级SSD",
+            layer: "中游下游",
+            ai: "强",
+            logic: "把颗粒做成模组/SSD；弹性看价格周期+AI需求。",
+            names: ["江波龙", "佰维存储", "德明利", "香农芯创", "联芸科技"],
+            metrics: ["NAND/DRAM合约价", "模组出货", "企业级SSD占比", "库存周转", "毛利率"],
+            note: "周期属性强，AI是需求增量，不是消灭周期。",
+          },
+          {
+            name: "国产存储制造 / 设备材料",
+            layer: "上游",
+            ai: "强",
+            logic: "长鑫/长江扩产带动设备材料。",
+            names: ["北方华创", "中微公司", "拓荆科技", "盛美上海", "雅克科技"],
+            metrics: ["国内存储厂扩产", "设备招标", "国产化率", "材料验证进度"],
+            note: "与「半导体设备材料」链条高度重叠。",
+          },
+        ],
+        timeline: [
+          ["领先", "HBM缺口、GPU出货指引", "定AI存储景气天花板"],
+          ["领先1–3月", "DRAM/NAND合约价、渠道库存", "定模组厂利润"],
+          ["同步", "接口芯片出货、模组毛利", "A股业绩验证"],
+          ["风险", "价格暴跌、库存堆积、产能过剩", "周期下行杀估值"],
+        ],
+        checklist: [
+          "HBM是否仍紧缺？",
+          "服务器DDR5是否继续涨价/去库？",
+          "模组厂库存是否健康？",
+          "国内存储厂资本开支有无加速？",
+        ],
+      },
+      {
+        id: "cpo",
+        title: "光通信 / CPO",
+        necessity: "核心刚需",
+        oneLiner: "主战场是800G/1.6T光模块；CPO/硅光是下一代。A股光模块映射全球最清晰。",
+        priority: [
+          ["一阶", "高速光模块", "中际旭创、新易盛、天孚通信、光迅科技"],
+          ["一阶上游", "光器件/光芯片", "源杰科技、长光华芯、仕佳光子、联特科技"],
+          ["二阶", "光纤连接器/线缆", "太辰光、鼎通科技、意华股份"],
+          ["三阶", "CPO/硅光前瞻", "光库科技、部分模块厂硅光方案"],
+        ],
+        flow: `上游：光芯片(EML/硅光) / DSP / 激光器 / 光纤连接器
+        ↓
+中游：800G·1.6T光模块 / 光引擎 / CPO·LPO
+        ↓
+下游：AI交换机 / GPU集群互联 / 云厂商数据中心`,
+        segs: [
+          {
+            name: "高速光模块 800G/1.6T",
+            layer: "中游主战场",
+            ai: "最强",
+            logic: "GPU集群互联放量最直接受益。北美云厂是核心客户。",
+            names: ["中际旭创", "新易盛", "光迅科技", "华工科技", "剑桥科技"],
+            metrics: ["800G出货", "1.6T送样/订单", "云厂CapEx", "毛利率", "产能与良率"],
+            note: "看客户结构与速率升级节奏。",
+          },
+          {
+            name: "光器件 / 光引擎 / 无源",
+            layer: "中上游",
+            ai: "最强",
+            logic: "模块里价值量和壁垒所在；天孚等偏组件平台。",
+            names: ["天孚通信", "光库科技", "太辰光"],
+            metrics: ["高速产品占比", "单模块价值量", "客户导入", "产能利用率"],
+            note: "常与模块厂景气共振。",
+          },
+          {
+            name: "光芯片 / 激光器",
+            layer: "上游核心",
+            ai: "强",
+            logic: "EML/硅光芯片决定速率与功耗；国产替代空间大、认证长。",
+            names: ["源杰科技", "长光华芯", "仕佳光子", "光迅科技（部分自研）"],
+            metrics: ["高速光芯片出货", "国产替代率", "良率", "大客户认证", "存货"],
+            note: "壁垒高，短期体量未必赶上模块厂弹性。",
+          },
+          {
+            name: "CPO / 硅光 / LPO",
+            layer: "下一代",
+            ai: "强",
+            logic: "降功耗提密度的演进方向；商业化节奏决定主题弹性。",
+            names: ["模块厂硅光方案", "光库科技"],
+            metrics: ["CPO试点规模", "LPO渗透", "功耗指标", "交换机roadmap"],
+            note: "主题强于短期收入；别把故事当已兑现订单。",
+          },
+          {
+            name: "高速连接器 / 铜缆过渡",
+            layer: "配套",
+            ai: "中",
+            logic: "短距仍可用DAC/铜连接；机柜内互联增量。",
+            names: ["鼎通科技", "意华股份", "沃尔核材"],
+            metrics: ["DAC/AOC出货", "单柜连接价值量", "800G配套放量"],
+            note: "过渡方案，中期有量。",
+          },
+        ],
+        timeline: [
+          ["领先", "云厂CapEx、交换机端口升级规划", "定模块需求"],
+          ["同步", "800G出货、1.6T订单、毛利率", "业绩验证"],
+          ["前瞻", "CPO/硅光商用节点", "主题催化"],
+          ["风险", "技术路线切换、价格战、客户集中", "估值波动大"],
+        ],
+        checklist: [
+          "800G是否仍在上量？1.6T有无实质订单？",
+          "云厂资本开支指引是否下修？",
+          "模块厂毛利率是否被降价侵蚀？",
+          "CPO是试点还是规模采购？",
+        ],
+      },
+      {
+        id: "package",
+        title: "先进封装",
+        necessity: "核心刚需",
+        oneLiner: "CoWoS把GPU+HBM拼起来；A股看载板、封测、设备材料，而不是台积电本身。",
+        priority: [
+          ["一阶", "封装载板/类载板", "深南电路、兴森科技"],
+          ["一阶", "先进封测", "长电科技、通富微电、华天科技"],
+          ["二阶", "封装设备与材料", "华海清科、拓荆科技、芯源微、长川科技"],
+          ["三阶", "ABF/材料上游", "有机基板材料、树脂相关"],
+        ],
+        flow: `上游：硅中介层 / ABF载板 / 键合设备 / 封装材料
+        ↓
+中游：CoWoS·InFO·SoIC / Chiplet拼装 / HBM堆叠 / OSAT
+        ↓
+下游：AI GPU成品 → 高性能ASIC → 高端服务器芯片`,
+        segs: [
+          {
+            name: "先进封测 2.5D/Chiplet",
+            layer: "中游",
+            ai: "最强",
+            logic: "承接AI芯片封装增量；看谁拿到大客户先进封装订单。",
+            names: ["长电科技", "通富微电", "华天科技", "晶方科技"],
+            metrics: ["先进封装收入占比", "大客户导入", "稼动率", "资本开支", "毛利率"],
+            note: "真正CoWoS产能仍集中海外/台积电体系。",
+          },
+          {
+            name: "封装载板",
+            layer: "上游关键",
+            ai: "最强",
+            logic: "ABF载板紧缺时常成瓶颈；认证壁垒高。",
+            names: ["深南电路", "兴森科技", "崇达技术（部分）"],
+            metrics: ["载板稼动率", "ABF供需", "新规格认证", "ASP", "库存"],
+            note: "与服务器PCB周期不完全同步。",
+          },
+          {
+            name: "封装设备",
+            layer: "上游铲子",
+            ai: "强",
+            logic: "扩产带来键合、研磨、电镀、检测设备需求。",
+            names: ["华海清科", "拓荆科技", "芯源微", "长川科技"],
+            metrics: ["封测厂CapEx", "设备订单", "国产替代验证", "交货周期"],
+            note: "订单滞后于封装景气确认。",
+          },
+          {
+            name: "封装材料",
+            layer: "上游",
+            ai: "中",
+            logic: "塑封料、球焊丝、底部填料等随先进封装升级。",
+            names: ["华海诚科", "德邦科技", "安集科技", "雅克科技"],
+            metrics: ["材料验证导入", "单芯片材料用量", "客户扩产", "毛利率"],
+            note: "长逻辑国产替代，短弹性看导入节点。",
+          },
+        ],
+        timeline: [
+          ["领先", "CoWoS扩产、GPU/HBM出货指引", "定封装需求"],
+          ["同步", "载板稼动、封测先进封装收入", "A股验证"],
+          ["滞后", "设备材料订单", "扩产确认"],
+          ["风险", "扩产过度、技术路线变化", "利用率下行"],
+        ],
+        checklist: [
+          "先进封装产能是否仍紧？",
+          "载板交期/价格是否紧张？",
+          "封测厂先进封装占比提升了吗？",
+          "只是主题还是已经进财报？",
+        ],
+      },
+      {
+        id: "pcb",
+        title: "PCB / 覆铜板",
+        necessity: "强配套",
+        oneLiner: "AI服务器与交换机高多层板是主战场；高速CCL最先敏感。",
+        priority: [
+          ["一阶", "高多层服务器/交换机PCB", "沪电股份、深南电路、生益电子、胜宏科技"],
+          ["一阶上游", "高速CCL", "生益科技、华正新材、南亚新材、金安国纪"],
+          ["二阶", "HVLP电子铜箔", "嘉元科技、德福科技、铜冠铜箔"],
+          ["三阶", "设备/钻针/电子布", "大族数控、鼎泰高科、宏和科技"],
+        ],
+        flow: `上游：电子铜箔(HVLP) → 树脂/电子布 → 覆铜板CCL
+        ↓
+中游：高多层PCB / HDI / 封装载板
+        ↓
+下游：AI服务器主板 / 交换机 / 光模块板 / 加速卡`,
+        segs: [
+          {
+            name: "高多层服务器/交换机PCB",
+            layer: "中游主战场",
+            ai: "最强",
+            logic: "层数与价值量随AI服务器上修，量价最直接。",
+            names: ["沪电股份", "深南电路", "生益电子", "胜宏科技", "景旺电子", "世运电路"],
+            metrics: ["AI服务器出货", "高多层稼动率", "AI板占比", "毛利率", "ASP"],
+            note: "看海外大客户认证与AI收入占比。",
+          },
+          {
+            name: "高速CCL",
+            layer: "上游",
+            ai: "最强",
+            logic: "低损耗材料瓶颈；涨价常领先板厂利润。",
+            names: ["生益科技", "华正新材", "南亚新材", "金安国纪"],
+            metrics: ["高速CCL均价", "库存天数", "高速产品占比", "树脂/电子布成本"],
+            note: "材料涨价是板厂景气的领先信号之一。",
+          },
+          {
+            name: "电子铜箔 HVLP",
+            layer: "上游",
+            ai: "强",
+            logic: "高速高多层需要低粗糙度铜箔。",
+            names: ["嘉元科技", "德福科技", "铜冠铜箔", "诺德股份"],
+            metrics: ["电子箔加工费", "HVLP占比", "开工率", "铜价"],
+            note: "务必区分电子铜箔与锂电铜箔。",
+          },
+          {
+            name: "PCB设备/钻针/电子布",
+            layer: "上游配套",
+            ai: "中",
+            logic: "扩产带来设备与耗材需求，偏滞后。",
+            names: ["大族数控", "鼎泰高科", "中国巨石", "宏和科技"],
+            metrics: ["板厂CapEx", "设备订单", "钻针消耗", "电子布价格"],
+            note: "确认扩产后才有像样订单弹性。",
+          },
+        ],
+        timeline: [
+          ["领先3–6月", "云厂CapEx、ODM排产", "定需求"],
+          ["领先1–3月", "CCL价格与库存", "定材料利润"],
+          ["同步", "板厂稼动率与毛利", "业绩验证"],
+          ["滞后", "设备扩产订单", "中期格局"],
+        ],
+        checklist: [
+          "云厂开支与服务器排产是否上修？",
+          "高速CCL是否涨价/去库？",
+          "板厂AI占比与毛利是否同步？",
+          "有没有被消费电子拖累？",
+        ],
+      },
+      {
+        id: "mlcc",
+        title: "MLCC / 被动元件",
+        necessity: "强配套",
+        oneLiner: "AI服务器单机电容电感用量显著上升；逻辑是量增+规格升级，不是纯故事。",
+        priority: [
+          ["一阶", "MLCC", "三环集团、风华高科、洁美科技（材料配套）"],
+          ["一阶", "电感/磁性元件", "顺络电子、铂科新材、东睦股份"],
+          ["二阶", "电阻及其他被动", "风华相关、火炬电子（部分）"],
+          ["三阶", "粉料/设备", "国瓷材料、相关设备材料"],
+        ],
+        flow: `上游：陶瓷粉料 / 电极浆料·镍粉 / 离型膜·载带 / 设备
+        ↓
+中游：MLCC / 功率电感 / 电阻 / 晶振滤波器
+        ↓
+下游：AI服务器电源与主板 / GPU卡 / 交换机 / 消费与汽车`,
+        segs: [
+          {
+            name: "MLCC",
+            layer: "中游",
+            ai: "强",
+            logic: "AI服务器、电源、GPU板对高容高压MLCC需求上修。",
+            names: ["三环集团", "风华高科", "昀冢科技"],
+            metrics: ["服务器单机MLCC用量", "高容规格稼动", "渠道库存", "价格", "汽车/消费需求"],
+            note: "日韩台仍有定价权；A股看结构和库存周期。",
+          },
+          {
+            name: "功率电感 / 磁材",
+            layer: "中游",
+            ai: "强",
+            logic: "GPU与服务器电源功率密度上升，电感与磁材受益。",
+            names: ["顺络电子", "铂科新材", "东睦股份", "横店东磁（部分）"],
+            metrics: ["服务器电源功率", "电感出货", "粉芯价格", "新能源需求共振"],
+            note: "常与电源、新能源需求叠加。",
+          },
+          {
+            name: "被动元件材料 / 载带",
+            layer: "上游",
+            ai: "中",
+            logic: "陶瓷粉、电极、载带/离型膜随被动元件景气。",
+            names: ["国瓷材料", "洁美科技", "博迁新材"],
+            metrics: ["粉料价格", "载带出货", "MLCC厂开工率"],
+            note: "弹性弱于元件厂，但景气传导清晰。",
+          },
+          {
+            name: "消费/汽车底座需求",
+            layer: "需求底盘",
+            ai: "弱",
+            logic: "手机汽车仍是被动元件基本盘；AI是增量不是全部。",
+            names: ["风华高科", "三环集团（消费汽车业务）"],
+            metrics: ["手机出货", "新能源车产量", "渠道库存周数"],
+            note: "若消费偏弱，会稀释AI带来的弹性。",
+          },
+        ],
+        timeline: [
+          ["领先", "服务器电源规格、单机用量测算", "定结构增量"],
+          ["同步", "库存、价格、稼动率", "周期位置"],
+          ["确认", "高容规格缺货/涨价", "AI逻辑兑现信号"],
+          ["风险", "价格战、库存堆积、消费拖累", "业绩不及预期"],
+        ],
+        checklist: [
+          "是量增还是涨价？还是只是估值故事？",
+          "渠道库存是否已经去完？",
+          "高容高压规格是否紧张？",
+          "消费汽车需求会不会拖后腿？",
+        ],
+      },
+      {
+        id: "server",
+        title: "服务器 / 液冷 / IDC",
+        necessity: "强配套",
+        oneLiner: "把芯片变成可卖算力；液冷因功耗跃升成为升级项，IDC看算力租赁与电力。",
+        priority: [
+          ["一阶", "AI服务器整机", "工业富联、浪潮信息、中科曙光、紫光股份"],
+          ["一阶", "液冷", "英维克、高澜股份、依米康、申菱环境"],
+          ["二阶", "IDC/算力服务", "数据港、奥飞数据、润泽科技、光环新网"],
+          ["三阶", "机柜/连接器/线缆", "华丰科技、永贵电器、瑞可达"],
+        ],
+        flow: `上游：CPU/GPU/网卡/内存/SSD / 电源 / 冷板·CDU / 机柜配电
+        ↓
+中游：AI服务器ODM / 整机柜·液冷方案 / IDC运营商
+        ↓
+下游：云厂商 / 政企智算 / 私有化部署 / 推理API`,
+        segs: [
+          {
+            name: "AI服务器 ODM/OEM",
+            layer: "中游",
+            ai: "最强",
+            logic: "直接承接云厂与政企算力采购。",
+            names: ["工业富联", "浪潮信息", "中科曙光", "紫光股份", "拓维信息"],
+            metrics: ["AI服务器出货", "大客户订单", "毛利率", "国产芯片搭载", "交付周期"],
+            note: "收入弹性大，利润看供应链议价。",
+          },
+          {
+            name: "液冷（冷板/CDU/整机柜）",
+            layer: "中游升级",
+            ai: "最强",
+            logic: "单柜功率上百kW后风冷不够，液冷渗透率是核心变量。",
+            names: ["英维克", "高澜股份", "依米康", "申菱环境", "佳力图"],
+            metrics: ["液冷渗透率", "冷板/CDU订单", "单柜功率密度", "互联网大厂标案"],
+            note: "看渗透率曲线，不只看主题热度。",
+          },
+          {
+            name: "IDC / 智算中心运营",
+            layer: "下游运营",
+            ai: "强",
+            logic: "算力租赁与机柜出租；约束在电力、能耗指标、上架率。",
+            names: ["数据港", "奥飞数据", "润泽科技", "光环新网", "科华数据"],
+            metrics: ["上架率", "机柜单价", "PUE", "电力指标", "智算业务占比"],
+            note: "重资产，业绩兑现慢于硬件主题。",
+          },
+          {
+            name: "机柜 / 连接器 / 配电配套",
+            layer: "配套",
+            ai: "中",
+            logic: "高速连接、液冷管路、配电与机柜结构件随整机柜升级。",
+            names: ["华丰科技", "永贵电器", "瑞可达", "沃尔核材"],
+            metrics: ["单机柜价值量", "连接器认证", "液冷配套出货"],
+            note: "常与服务器、液冷景气共振。",
+          },
+        ],
+        timeline: [
+          ["领先", "云厂CapEx、大模型招采", "定整机需求"],
+          ["同步", "服务器出货、液冷中标", "业绩验证"],
+          ["滞后", "IDC上架率与电费", "运营兑现"],
+          ["风险", "电力瓶颈、能耗政策、低价竞争", "回报下降"],
+        ],
+        checklist: [
+          "大厂服务器订单是否持续？",
+          "液冷是试点还是标配？",
+          "IDC有没有电和能耗指标？",
+          "整机毛利有没有被挤干？",
+        ],
+      },
+      {
+        id: "power",
+        title: "电源 / 电力",
+        necessity: "强配套",
+        oneLiner: "算力烧的是电；PSU、HVDC、变压器、功率器件都是约束环节。",
+        priority: [
+          ["一阶", "服务器电源/钛金PSU", "欧陆通、中恒电气、科华数据、动力源"],
+          ["一阶", "变压器/配电", "特变电工、中国西电、金盘科技、三变科技"],
+          ["二阶", "功率半导体", "斯达半导、宏微科技、东微半导、新洁能"],
+          ["三阶", "线缆/母线/UPS", "宝胜股份、许继电气、科士达"],
+        ],
+        flow: `上游：矽钢片·铜材 / 功率半导体 / 磁性元件·电容 / 绝缘线缆
+        ↓
+中游：服务器PSU·钛金电源 / HVDC·母线槽 / 变压器·开关柜 / UPS
+        ↓
+下游：数据中心配电 → AI机柜供电 → 园区电网扩容`,
+        segs: [
+          {
+            name: "服务器电源 / HVDC",
+            layer: "中游",
+            ai: "最强",
+            logic: "单柜功率跃升推高高效电源与高压直流方案。",
+            names: ["欧陆通", "中恒电气", "动力源", "科华数据"],
+            metrics: ["单柜功率", "钛金电源出货", "HVDC渗透", "云厂电源规格"],
+            note: "规格升级比单纯出货量更重要。",
+          },
+          {
+            name: "变压器 / 开关柜",
+            layer: "电力基建",
+            ai: "强",
+            logic: "智算中心落地受变压器交期与市电容量约束。",
+            names: ["特变电工", "中国西电", "金盘科技", "三变科技", "思源电气"],
+            metrics: ["变压器交期", "订单排产", "硅钢/铜成本", "数据中心项目"],
+            note: "AI是增量需求之一，还要看电网与出口订单。",
+          },
+          {
+            name: "功率半导体",
+            layer: "上游器件",
+            ai: "强",
+            logic: "电源转换效率与功率密度依赖功率器件。",
+            names: ["斯达半导", "宏微科技", "东微半导", "新洁能", "扬杰科技"],
+            metrics: ["服务器电源规格", "SiC渗透", "工业与新能源需求", "库存价格"],
+            note: "需求多领域共振，AI占比需单独拆。",
+          },
+          {
+            name: "UPS / 储能 / 线缆",
+            layer: "配套",
+            ai: "中",
+            logic: "机房可靠性与备电；线缆随配电扩容。",
+            names: ["科士达", "科华数据", "宝胜股份", "汉缆股份"],
+            metrics: ["IDC开工", "UPS订单", "绿电配套", "铜价"],
+            note: "稳健配套，弹性通常弱于液冷与服务器。",
+          },
+        ],
+        timeline: [
+          ["领先", "智算项目立项、单柜功率roadmap", "定电力需求"],
+          ["同步", "电源/变压器订单与交期", "瓶颈验证"],
+          ["确认", "HVDC规模化、变压器短缺持续", "逻辑强化"],
+          ["风险", "铜价、硅钢、产能过剩", "利润波动"],
+        ],
+        checklist: [
+          "单柜功率密度是否继续上修？",
+          "变压器交期是否仍长？",
+          "HVDC是主题还是招标落地？",
+          "功率器件价格处在周期哪一段？",
+        ],
+      },
+      {
+        id: "semicon",
+        title: "设备 / 材料 / 特气",
+        necessity: "核心刚需",
+        oneLiner: "造芯的铲子；看全球+国内晶圆厂扩产，以及国产替代验证节点。",
+        priority: [
+          ["一阶设备", "前道设备", "北方华创、中微公司、拓荆科技、盛美上海、芯源微"],
+          ["一阶材料", "特气/光刻胶/湿电子化学", "华特气体、南大光电、晶瑞电材、安集科技"],
+          ["二阶", "硅片/靶材/零部件", "沪硅产业、江丰电子、正帆科技、英杰电气"],
+          ["三阶", "量检测/后道", "中科飞测、精测电子、长川科技、华峰测控"],
+        ],
+        flow: `上游：精密零部件 / 特种钢材陶瓷 / 基础化学品
+        ↓
+中游：前道设备 / 后道封测设备 / 光刻胶·湿电子·特气 / 靶材·抛光液·硅片
+        ↓
+下游：晶圆厂扩产 / 存储厂扩产 / 先进封装产线`,
+        segs: [
+          {
+            name: "前道工艺设备",
+            layer: "设备核心",
+            ai: "最强",
+            logic: "刻蚀、薄膜、清洗、涂胶显影等直接受益于晶圆厂扩产。",
+            names: ["北方华创", "中微公司", "拓荆科技", "盛美上海", "芯源微", "华海清科"],
+            metrics: ["晶圆厂CapEx", "国产设备中标", "在手订单", "验证平台数", "毛利率"],
+            note: "光刻机仍高度受限，其他环节国产化推进更快。",
+          },
+          {
+            name: "量检测 / 后道测试",
+            layer: "设备",
+            ai: "强",
+            logic: "先进制程与封装对检测需求上升。",
+            names: ["中科飞测", "精测电子", "长川科技", "华峰测控"],
+            metrics: ["检测设备订单", "存储/逻辑厂扩产", "国产替代率"],
+            note: "与前道设备同周期，略偏验证滞后。",
+          },
+          {
+            name: "电子材料 / 特气 / 光刻胶",
+            layer: "材料",
+            ai: "最强",
+            logic: "扩产即耗材；认证长，一旦导入粘性强。",
+            names: ["华特气体", "南大光电", "晶瑞电材", "安集科技", "雅克科技", "彤程新材"],
+            metrics: ["材料验证层级", "国产化率", "晶圆厂开工", "产品单价与毛利"],
+            note: "看「能不能进线」比看主题更重要。",
+          },
+          {
+            name: "硅片 / 靶材 / 零部件",
+            layer: "上游底座",
+            ai: "强",
+            logic: "硅片是最大耗材之一；精密零部件决定设备交付能力。",
+            names: ["沪硅产业", "立昂微", "江丰电子", "正帆科技", "新莱应材", "英杰电气"],
+            metrics: ["12寸硅片供需", "靶材导入", "零部件国产化", "设备厂排产"],
+            note: "硅片偏全球周期，零部件偏国产替代。",
+          },
+        ],
+        timeline: [
+          ["领先", "全球/国内晶圆厂CapEx指引", "定设备年景"],
+          ["同步", "招标中标、在手订单", "业绩可见度"],
+          ["滞后", "材料放量、重复订单", "替代兑现"],
+          ["风险", "扩产推迟、验证失败、地缘摩擦", "订单真空"],
+        ],
+        checklist: [
+          "晶圆厂资本开支是否还在加？",
+          "设备是一次性订单还是重复采购？",
+          "材料到了几级验证？",
+          "存储厂与逻辑厂谁在扩？",
+        ],
+      },
+      {
+        id: "metals",
+        title: "AI 小金属",
+        necessity: "弹性受益",
+        oneLiner: "更偏资源价格与供需缺口；适合当约束指标，不宜简单当科技成长股。",
+        priority: [
+          ["电与PCB", "铜", "紫金矿业、洛阳钼业、西部矿业"],
+          ["焊接", "锡", "锡业股份、华锡有色"],
+          ["浆料/电子", "银", "兴业银锡、盛达资源"],
+          ["光通信/化合物", "镓锗铟", "云南锗业、驰宏锌锗"],
+          ["机电散热", "稀土", "北方稀土、金力永磁（AI拉动勿夸大）"],
+        ],
+        flow: `上游：矿山开采 / 伴生矿回收 / 选冶提纯 / 战略资源政策
+        ↓
+中游：高纯金属·靶材 / 铜箔·锡焊料·银浆 / 稀土永磁
+        ↓
+下游：半导体与光芯片 / PCB·MLCC / 散热机电 / 电力配套`,
+        segs: [
+          {
+            name: "铜",
+            layer: "资源",
+            ai: "强",
+            logic: "PCB、线缆、变压器、散热都耗铜；算力+电力共振。",
+            names: ["紫金矿业", "洛阳钼业", "西部矿业", "铜陵有色"],
+            metrics: ["LME铜价", "库存", "矿端供给", "电网+IDC投资"],
+            note: "宏观与电网影响更大，AI是边际加分项。",
+          },
+          {
+            name: "锡",
+            layer: "资源",
+            ai: "中",
+            logic: "电子焊接刚需；半导体与PCB景气时弹性出现。",
+            names: ["锡业股份", "华锡有色"],
+            metrics: ["锡价", "缅甸/印尼供给", "电子焊料需求", "库存"],
+            note: "供给扰动常比AI需求更主导价格。",
+          },
+          {
+            name: "银",
+            layer: "资源",
+            ai: "中",
+            logic: "导电浆料与电子触点；常与光伏电子共振。",
+            names: ["兴业银锡", "盛达资源", "银邦股份"],
+            metrics: ["银价", "光伏浆料耗量", "电子消费", "库存"],
+            note: "金融属性强，科技映射弱于铜锡。",
+          },
+          {
+            name: "镓 / 锗 / 铟",
+            layer: "小金属",
+            ai: "中",
+            logic: "化合物半导体、光纤相关；出口管制可放大波动。",
+            names: ["云南锗业", "驰宏锌锗", "株冶集团"],
+            metrics: ["出口政策", "光纤/化合物需求", "价格", "库存"],
+            note: "体量小、波动大，政策市特征明显。",
+          },
+          {
+            name: "稀土 / 永磁",
+            layer: "材料",
+            ai: "弱",
+            logic: "机房风机电机有永磁需求，但主逻辑仍在新能源车与风电。",
+            names: ["北方稀土", "金力永磁", "宁波韵升", "正海磁材"],
+            metrics: ["稀土价格", "新能源车销量", "风电装机", "IDC电机增量（次要）"],
+            note: "不要夸大AI对稀土的拉动。",
+          },
+        ],
+        timeline: [
+          ["领先", "矿山供给、出口管制、宏观流动性", "定价主导"],
+          ["同步", "现货价、库存、升贴水", "交易层面"],
+          ["科技验证", "PCB/电力/光通信真实耗量", "辨认真假AI逻辑"],
+          ["风险", "把周期股当成长股高估值", "回撤大"],
+        ],
+        checklist: [
+          "价格上涨是供给收缩还是AI耗量？",
+          "库存高不高？",
+          "有没有出口管制催化？",
+          "估值是否已经透支资源红利？",
+        ],
+      },
+    ];
+
+    const state = { chainId: "overview", segIdx: 0 };
+
+    function necessityClass(n) {
+      if (n === "核心刚需") return "core";
+      if (n === "强配套") return "strong";
+      return "flex";
+    }
+
+    function renderNav() {
+      const list = document.getElementById("nav-list");
+      list.innerHTML = CHAINS.map((c) => {
+        const active = state.chainId === c.id ? "active" : "";
+        return `<button class="nav-btn ${active}" data-id="${c.id}">${c.title}<span class="tag">${c.necessity}</span></button>`;
+      }).join("");
+
+      document.querySelectorAll(".nav-btn").forEach((btn) => {
+        btn.classList.toggle("active", btn.dataset.id === state.chainId);
+        btn.onclick = () => {
+          state.chainId = btn.dataset.id;
+          state.segIdx = 0;
+          render();
+        };
+      });
+    }
+
+    function tableHTML(headers, rows) {
+      return `<table><thead><tr>${headers.map((h) => `<th>${h}</th>`).join("")}</tr></thead>
+        <tbody>${rows.map((r) => `<tr>${r.map((c) => `<td>${c}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
+    }
+
+    function renderOverview() {
+      return `
+        <div class="hero">
+          <h2>本轮科技牛：产业链全景</h2>
+          <p>按「发展 AI 是否缺它」梳理十个细分。左侧点选进入详情，详情里再点具体环节。</p>
+          <div class="motto">芯片定上限 → HBM 定带宽 → 光模块/CPO 定集群 → PCB/MLCC 定底板 → 液冷/电力定落地 → 设备材料定扩产</div>
+          <div class="pills">
+            <span class="pill core">核心刚需 ×5</span>
+            <span class="pill strong">强配套 ×4</span>
+            <span class="pill flex">弹性受益 ×1</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>必要程度分层</h3>
+          ${tableHTML(
+            ["必要程度", "环节", "为什么必须"],
+            [
+              ["核心刚需", "算力芯片、HBM、先进封装、光通信/CPO、设备材料", "没有这些，集群建不起来或扩不动"],
+              ["强配套", "PCB/CCL、MLCC、服务器/液冷/IDC、电源电力", "芯片要装进整机、机柜、机房才能变现"],
+              ["弹性受益", "AI小金属", "用量与价格弹性，更偏资源约束"],
+            ]
+          )}
+        </div>
+
+        <div class="card">
+          <h3>点选进入细分</h3>
+          <div class="overview-grid">
+            ${CHAINS.map(
+              (c) => `<button class="ov-item" data-jump="${c.id}">
+                <div class="n">${c.title} · ${c.necessity}</div>
+                <div class="d">${c.oneLiner}</div>
+              </button>`
+            ).join("")}
+          </div>
+        </div>
+
+        <p class="disclaimer">列举公司为市场常见映射举例，用于产业对照学习，不构成投资建议。</p>
+      `;
+    }
+
+    function renderChain(c) {
+      const seg = c.segs[state.segIdx] || c.segs[0];
+      return `
+        <div class="hero">
+          <h2>${c.title}</h2>
+          <p>${c.oneLiner}</p>
+          <div class="pills">
+            <span class="pill ${necessityClass(c.necessity)}">${c.necessity}</span>
+            <span class="pill">共 ${c.segs.length} 个环节</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>观察优先级（非荐股）</h3>
+          ${tableHTML(["优先级", "环节", "A股常见映射举例"], c.priority)}
+        </div>
+
+        <div class="card">
+          <h3>环节明细 · 点选查看</h3>
+          <div class="seg-tabs">
+            ${c.segs
+              .map(
+                (s, i) =>
+                  `<button class="seg-tab ${i === state.segIdx ? "active" : ""}" data-seg="${i}">${s.name}</button>`
+              )
+              .join("")}
+          </div>
+          <div class="seg-detail">
+            <div class="title">${seg.name}</div>
+            <div class="meta">
+              <span class="pill">${seg.layer}</span>
+              <span class="pill core">AI相关度 ${seg.ai}</span>
+            </div>
+            <p class="kv"><b>逻辑</b>${seg.logic}</p>
+            <p class="kv"><b>A股常见映射</b></p>
+            <div class="chips">${seg.names.map((n) => `<span class="chip">${n}</span>`).join("")}</div>
+            <p class="kv" style="margin-top:10px"><b>跟踪指标</b></p>
+            <div class="chips">${seg.metrics.map((m) => `<span class="chip">${m}</span>`).join("")}</div>
+            <p class="kv" style="margin-top:10px"><b>备注</b>${seg.note}</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>上下游简图</h3>
+          <div class="flow">${c.flow}</div>
+        </div>
+
+        <div class="card">
+          <h3>指标时间轴</h3>
+          ${tableHTML(["时效", "看什么", "含义"], c.timeline)}
+        </div>
+
+        <div class="card">
+          <h3>检查清单</h3>
+          <ul class="checklist">${c.checklist.map((x) => `<li>${x}</li>`).join("")}</ul>
+        </div>
+
+        <p class="disclaimer">仅研究梳理，不构成投资建议。景气以订单、价格、库存、资本开支验证为准。</p>
+      `;
+    }
+
+    function render() {
+      renderNav();
+      const app = document.getElementById("app");
+      if (state.chainId === "overview") {
+        app.innerHTML = renderOverview();
+        app.querySelectorAll("[data-jump]").forEach((el) => {
+          el.onclick = () => {
+            state.chainId = el.dataset.jump;
+            state.segIdx = 0;
+            render();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          };
+        });
+        return;
+      }
+      const chain = CHAINS.find((c) => c.id === state.chainId) || CHAINS[0];
+      app.innerHTML = renderChain(chain);
+      app.querySelectorAll("[data-seg]").forEach((el) => {
+        el.onclick = () => {
+          state.segIdx = Number(el.dataset.seg);
+          render();
+        };
+      });
+    }
+
+    render();
+  </script>
+</body>
+</html>
