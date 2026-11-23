@@ -1,0 +1,3314 @@
+{
+  "n": 33,
+  "patterns": {
+    "连板·放量分歧/加速": 4,
+    "首板·高位惯性/补涨": 1,
+    "连板·缩平量晋级": 5,
+    "首板·弱转强(昨跌今放量板)": 5,
+    "首板·缩量偷袭/一致预期": 5,
+    "首板·横盘蓄势放量": 7,
+    "首板·其他(顺势小涨)": 6
+  },
+  "rows": [
+    {
+      "code": "000819",
+      "name": "岳阳兴长",
+      "lbc": 2,
+      "hy": "炼化及贸",
+      "ltsz": 51.6,
+      "fund": 0.4,
+      "zt_hs": 12.89,
+      "zt_amt": 6.62,
+      "zbc": 5,
+      "today_pct": 9.98,
+      "vol_r5": 3.15,
+      "vol_r10": 2.65,
+      "prev_vol_r5": 1.81,
+      "vol_trend10": 0.73,
+      "ret3_ex": 9.67,
+      "ret5_ex": 9.01,
+      "ret10_ex": 9.01,
+      "prev_pct": 10.04,
+      "pos10": 0.95,
+      "pos20": 0.95,
+      "amp5": 5.32,
+      "up_days5": 4,
+      "small_body5": 3,
+      "zt_before": 1,
+      "break10": true,
+      "break20": true,
+      "shrink_expand": false,
+      "prev_shrink": false,
+      "prev_yang": true,
+      "above_ma5": true,
+      "above_ma10": true,
+      "ma5_up": true,
+      "higher_low": true,
+      "kl_view": [
+        {
+          "d": "11-04",
+          "pct": -5.42,
+          "tag": "阴",
+          "vol_r": 1.89,
+          "c": 11.52
+        },
+        {
+          "d": "11-05",
+          "pct": -0.35,
+          "tag": "阳",
+          "vol_r": 0.85,
+          "c": 11.48
+        },
+        {
+          "d": "11-06",
+          "pct": 0.87,
+          "tag": "阳",
+          "vol_r": 1.12,
+          "c": 11.58
+        },
+        {
+          "d": "11-09",
+          "pct": 1.55,
+          "tag": "阳",
+          "vol_r": 0.96,
+          "c": 11.76
+        },
+        {
+          "d": "11-10",
+          "pct": 0.43,
+          "tag": "阳",
+          "vol_r": 0.62,
+          "c": 11.81
+        },
+        {
+          "d": "11-11",
+          "pct": -1.02,
+          "tag": "阴",
+          "vol_r": 0.92,
+          "c": 11.69
+        },
+        {
+          "d": "11-12",
+          "pct": -0.34,
+          "tag": "阳",
+          "vol_r": 0.7,
+          "c": 11.65
+        },
+        {
+          "d": "11-13",
+          "pct": 10.04,
+          "tag": "板",
+          "vol_r": 1.81,
+          "c": 12.82
+        },
+        {
+          "d": "11-16",
+          "pct": 9.98,
+          "tag": "板",
+          "vol_r": 3.15,
+          "c": 14.1
+        }
+      ]
+    },
+    {
+      "code": "002148",
+      "name": "北纬科技",
+      "lbc": 4,
+      "hy": "通信服务",
+      "ltsz": 39.5,
+      "fund": 0.93,
+      "zt_hs": 35.28,
+      "zt_amt": 13.66,
+      "zbc": 4,
+      "today_pct": 10.06,
+      "vol_r5": 3.42,
+      "vol_r10": 5.44,
+      "prev_vol_r5": 1.13,
+      "vol_trend10": 3.88,
+      "ret3_ex": 21.0,
+      "ret5_ex": 36.6,
+      "ret10_ex": 37.31,
+      "prev_pct": 9.96,
+      "pos10": 1.0,
+      "pos20": 1.0,
+      "amp5": 5.1,
+      "up_days5": 4,
+      "small_body5": 2,
+      "zt_before": 3,
+      "break10": true,
+      "break20": true,
+      "shrink_expand": false,
+      "prev_shrink": false,
+      "prev_yang": true,
+      "above_ma5": true,
+      "above_ma10": true,
+      "ma5_up": true,
+      "higher_low": true,
+      "kl_view": [
+        {
+          "d": "11-04",
+          "pct": 1.73,
+          "tag": "阳",
+          "vol_r": 0.23,
+          "c": 5.88
+        },
+        {
+          "d": "11-05",
+          "pct": 2.38,
+          "tag": "阳",
+          "vol_r": 0.25,
+          "c": 6.02
+        },
+        {
+          "d": "11-06",
+          "pct": -2.33,
+          "tag": "阳",
+          "vol_r": 0.21,
+          "c": 5.88
+        },
+        {
+          "d": "11-09",
+          "pct": -1.02,
+          "tag": "阴",
+          "vol_r": 0.15,
+          "c": 5.82
+        },
+        {
+          "d": "11-10",
+          "pct": 2.58,
+          "tag": "阳",
+          "vol_r": 0.2,
+          "c": 5.97
+        },
+        {
+          "d": "11-11",
+          "pct": 10.05,
+          "tag": "板",
+          "vol_r": 0.6,
+          "c": 6.57
+        },
+        {
+          "d": "11-12",
+          "pct": 10.05,
+          "tag": "板",
+          "vol_r": 2.91,
+          "c": 7.23
+        },
+        {
+          "d": "11-13",
+          "pct": 9.96,
+          "tag": "板",
+          "vol_r": 1.13,
+          "c": 7.95
+        },
+        {
+          "d": "11-16",
+          "pct": 10.06,
+          "tag": "板",
+          "vol_r": 3.42,
+          "c": 8.75
+        }
+      ]
+    },
+    {
+      "code": "002242",
+      "name": "九阳股份",
+      "lbc": 1,
+      "hy": "小家电",
+      "ltsz": 224.2,
+      "fund": 3.64,
+      "zt_hs": 11.06,
+      "zt_amt": 24.6,
+      "zbc": 3,
+      "today_pct": 10.02,
+      "vol_r5": 1.16,
+      "vol_r10": 1.03,
+      "prev_vol_r5": 1.13,
+      "vol_trend10": 0.81,
+      "ret3_ex": 0.6,
+      "ret5_ex": 2.49,
+      "ret10_ex": 14.66,
+      "prev_pct": 0.38,
+      "pos10": 0.95,
+      "pos20": 0.97,
+      "amp5": 2.87,
+      "up_days5": 5,
+      "small_body5": 3,
+      "zt_before": 0,
+      "break10": true,
+      "break20": true,
+      "shrink_expand": false,
+      "prev_shrink": false,
+      "prev_yang": true,
+      "above_ma5": true,
+      "above_ma10": true,
+      "ma5_up": true,
+      "higher_low": true,
+      "kl_view": [
+        {
+          "d": "11-04",
+          "pct": 3.5,
+          "tag": "阳",
+          "vol_r": 1.47,
+          "c": 23.68
+        },
+        {
+          "d": "11-05",
+          "pct": 2.91,
+          "tag": "阳",
+          "vol_r": 1.01,
+          "c": 24.37
+        },
+        {
+          "d": "11-06",
+          "pct": 3.0,
+          "tag": "阳",
+          "vol_r": 1.04,
+          "c": 25.1
+        },
+        {
+          "d": "11-09",
+          "pct": 3.98,
+          "tag": "阳",
+          "vol_r": 1.04,
+          "c": 26.1
+        },
+        {
+          "d": "11-10",
+          "pct": 0.96,
+          "tag": "阳",
+          "vol_r": 0.95,
+          "c": 26.35
+        },
+        {
+          "d": "11-11",
+          "pct": 0.91,
+          "tag": "阳",
+          "vol_r": 0.74,
+          "c": 26.59
+        },
+        {
+          "d": "11-12",
+          "pct": 0.23,
+          "tag": "阳",
+          "vol_r": 1.14,
+          "c": 26.65
+        },
+        {
+          "d": "11-13",
+          "pct": 0.38,
+          "tag": "阳",
+          "vol_r": 1.13,
+          "c": 26.75
+        },
+        {
+          "d": "11-16",
+          "pct": 10.02,
+          "tag": "板",
+          "vol_r": 1.16,
+          "c": 29.43
+        }
+      ]
+    },
+    {
+      "code": "002905",
+      "name": "金逸影视",
+      "lbc": 2,
+      "hy": "影视院线",
+      "ltsz": 38.1,
+      "fund": 1.48,
+      "zt_hs": 1.17,
+      "zt_amt": 0.45,
+      "zbc": 0,
+      "today_pct": 10.0,
+      "vol_r5": 0.23,
+      "vol_r10": 0.34,
+      "prev_vol_r5": 0.47,
+      "vol_trend10": 2.54,
+      "ret3_ex": 9.39,
+      "ret5_ex": 16.61,
+      "ret10_ex": 20.15,
+      "prev_pct": 10.0,
+      "pos10": 1.0,
+      "pos20": 1.0,
+      "amp5": 8.07,
+      "up_days5": 3,
+      "small_body5": 2,
+      "zt_before": 1,
+      "break10": true,
+      "break20": true,
+      "shrink_expand": false,
+      "prev_shrink": true,
+      "prev_yang": true,
+      "above_ma5": true,
+      "above_ma10": true,
+      "ma5_up": true,
+      "higher_low": true,
+      "kl_view": [
+        {
+          "d": "11-04",
+          "pct": -0.24,
+          "tag": "阴",
+          "vol_r": 0.4,
+          "c": 8.25
+        },
+        {
+          "d": "11-05",
+          "pct": 4.0,
+          "tag": "阳",
+          "vol_r": 0.35,
+          "c": 8.58
+        },
+        {
+          "d": "11-06",
+          "pct": -0.82,
+          "tag": "阳",
+          "vol_r": 0.32,
+          "c": 8.51
+        },
+        {
+          "d": "11-09",
+          "pct": -0.24,
+          "tag": "阴",
+          "vol_r": 0.82,
+          "c": 8.49
+        },
+        {
+          "d": "11-10",
+          "pct": 10.01,
+          "tag": "板",
+          "vol_r": 1.23,
+          "c": 9.34
+        },
+        {
+          "d": "11-11",
+          "pct": -3.1,
+          "tag": "阴",
+          "vol_r": 1.51,
+          "c": 9.05
+        },
+        {
+          "d": "11-12",
+          "pct": -0.55,
+          "tag": "阳",
+          "vol_r": 0.96,
+          "c": 9.0
+        },
+        {
+          "d": "11-13",
+          "pct": 10.0,
+          "tag": "板",
+          "vol_r": 0.47,
+          "c": 9.9
+        },
+        {
+          "d": "11-16",
+          "pct": 10.0,
+          "tag": "板",
+          "vol_r": 0.23,
+          "c": 10.89
+        }
+      ]
+    },
+    {
+      "code": "002425",
+      "name": "凯撒文化",
+      "lbc": 2,
+      "hy": "游戏Ⅱ",
+      "ltsz": 40.1,
+      "fund": 2.25,
+      "zt_hs": 19.84,
+      "zt_amt": 7.87,
+      "zbc": 1,
+      "today_pct": 10.1,
+      "vol_r5": 1.47,
+      "vol_r10": 1.66,
+      "prev_vol_r5": 1.01,
+      "vol_trend10": 1.3,
+      "ret3_ex": 3.39,
+      "ret5_ex": 25.32,
+      "ret10_ex": 25.71,
+      "prev_pct": 10.0,
+      "pos10": 0.84,
+      "pos20": 0.84,
+      "amp5": 9.27,
+      "up_days5": 3,
+      "small_body5": 0,
+      "zt_before": 1,
+      "break10": true,
+      "break20": true,
+      "shrink_expand": false,
+      "prev_shrink": false,
+      "prev_yang": true,
+      "above_ma5": true,
+      "above_ma10": true,
+      "ma5_up": true,
+      "higher_low": true,
+      "kl_view": [
+        {
+          "d": "11-04",
+          "pct": -2.39,
+          "tag": "阴",
+          "vol_r": 0.85,
+          "c": 3.27
+        },
+        {
+          "d": "11-05",
+          "pct": 0.92,
+          "tag": "阳",
+          "vol_r": 0.59,
+          "c": 3.3
+        },
+        {
+          "d": "11-06",
+          "pct": -2.42,
+          "tag": "阳",
+          "vol_r": 0.53,
+          "c": 3.22
+        },
+        {
+          "d": "11-09",
+          "pct": -1.86,
+          "tag": "阴",
+          "vol_r": 0.43,
+          "c": 3.16
+        },
+        {
+          "d": "11-10",
+          "pct": 10.13,
+          "tag": "板",
+          "vol_r": 0.35,
+          "c": 3.48
+        },
+        {
+          "d": "11-11",
+          "pct": 10.06,
+          "tag": "板",
+          "vol_r": 1.21,
+          "c": 3.83
+        },
+        {
+          "d": "11-12",
+          "pct": -6.01,
+          "tag": "阴",
+          "vol_r": 2.0,
+          "c": 3.6
+        },
+        {
+          "d": "11-13",
+          "pct": 10.0,
+          "tag": "板",
+          "vol_r": 1.01,
+          "c": 3.96
+        },
+        {
+          "d": "11-16",
+          "pct": 10.1,
+          "tag": "板",
+          "vol_r": 1.47,
+          "c": 4.36
+        }
+      ]
+    },
+    {
+      "code": "002548",
+      "name": "金新农",
+      "lbc": 2,
+      "hy": "饲料",
+      "ltsz": 33.9,
+      "fund": 1.21,
+      "zt_hs": 4.05,
+      "zt_amt": 1.37,
+      "zbc": 0,
+      "today_pct": 9.92,
+      "vol_r5": 1.67,
+      "vol_r10": 1.73,
+      "prev_vol_r5": 1.87,
+      "vol_trend10": 1.08,
+      "ret3_ex": 8.81,
+      "ret5_ex": 8.5,
+      "ret10_ex": 12.32,
+      "prev_pct": 10.06,
+      "pos10": 1.0,
+      "pos20": 1.0,
+      "amp5": 3.92,
+      "up_days5": 3,
+      "small_body5": 4,
+      "zt_before": 1,
+      "break10": true,
+      "break20": true,
+      "shrink_expand": false,
+      "prev_shrink": false,
+      "prev_yang": true,
+      "above_ma5": true,
+      "above_ma10": true,
+      "ma5_up": true,
+      "higher_low": false,
+      "kl_view": [
+        {
+          "d": "11-04",
+          "pct": 0.58,
+          "tag": "阳",
+          "vol_r": 0.99,
+          "c": 3.46
+        },
+        {
+          "d": "11-05",
+          "pct": 2.02,
+          "tag": "阳",
+          "vol_r": 1.03,
+          "c": 3.53
+        },
+        {
+          "d": "11-06",
+          "pct": -0.28,
+          "tag": "阳",
+          "vol_r": 0.83,
+          "c": 3.52
+        },
+        {
+          "d": "11-09",
+          "pct": 0.28,
+          "tag": "阳",
+          "vol_r": 0.89,
+          "c": 3.53
+        },
+        {
+          "d": "11-10",
+          "pct": 0.0,
+          "tag": "阴",
+          "vol_r": 0.6,
+          "c": 3.53
+        },
+        {
+          "d": "11-11",
+          "pct": -0.28,
+          "tag": "阳",
+          "vol_r": 0.71,
+          "c": 3.52
+        },
+        {
+          "d": "11-12",
+          "pct": -1.14,
+          "tag": "阴",
+          "vol_r": 0.93,
+          "c": 3.48
+        },
+        {
+          "d": "11-13",
+          "pct": 10.06,
+          "tag": "板",
+          "vol_r": 1.87,
+          "c": 3.83
+        },
+        {
+          "d": "11-16",
+          "pct": 9.92,
+          "tag": "板",
+          "vol_r": 1.67,
+          "c": 4.21
+        }
+      ]
+    },
+    {
+      "code": "002187",
+      "name": "广百股份",
+      "lbc": 3,
+      "hy": "一般零售",
+      "ltsz": 53.8,
+      "fund": 3.0,
+      "zt_hs": 5.53,
+      "zt_amt": 2.96,
+      "zbc": 0,
+      "today_pct": 10.04,
+      "vol_r5": 0.83,
+      "vol_r10": 0.79,
+      "prev_vol_r5": 2.41,
+      "vol_trend10": 0.91,
+      "ret3_ex": 21.01,
+      "ret5_ex": 20.38,
+      "ret10_ex": 20.17,
+      "prev_pct": 9.94,
+      "pos10": 1.0,
+      "pos20": 1.0,
+      "amp5": 4.8,
+      "up_days5": 4,
+      "small_body5": 4,
+      "zt_before": 2,
+      "break10": true,
+      "break20": true,
+      "shrink_expand": false,
+      "prev_shrink": false,
+      "prev_yang": true,
+      "above_ma5": true,
+      "above_ma10": true,
+      "ma5_up": true,
+      "higher_low": true,
+      "kl_view": [
+        {
+          "d": "11-04",
+          "pct": 2.1,
+          "tag": "阴",
+          "vol_r": 1.26,
+          "c": 5.84
+        },
+        {
+          "d": "11-05",
+          "pct": 1.54,
+          "tag": "阳",
+          "vol_r": 1.36,
+          "c": 5.93
+        },
+        {
+          "d": "11-06",
+          "pct": -3.71,
+          "tag": "阴",
+          "vol_r": 0.8,
+          "c": 5.71
+        },
+        {
+          "d": "11-09",
+          "pct": 1.4,
+          "tag": "阳",
+          "vol_r": 0.64,
+          "c": 5.79
+        },
+        {
+          "d": "11-10",
+          "pct": 0.69,
+          "tag": "阳",
+          "vol_r": 0.64,
+          "c": 5.83
+        },
+        {
+          "d": "11-11",
+          "pct": -1.2,
+          "tag": "阴",
+          "vol_r": 0.64,
+          "c": 5.76
+        },
+        {
+          "d": "11-12",
+          "pct": 10.07,
+          "tag": "板",
+          "vol_r": 0.67,
+          "c": 6.34
+        },
+        {
+          "d": "11-13",
+          "pct": 9.94,
+          "tag": "板",
+          "vol_r": 2.41,
+          "c": 6.97
+        },
+        {
+          "d": "11-16",
+          "pct": 10.04,
+          "tag": "板",
+          "vol_r": 0.83,
+          "c": 7.67
+        }
+      ]
+    },
+    {
+      "code": "002419",
+      "name": "天虹股份",
+      "lbc": 1,
+      "hy": "一般零售",
+      "ltsz": 61.6,
+      "fund": 1.58,
+      "zt_hs": 5.5,
+      "zt_amt": 3.35,
+      "zbc": 2,
+      "today_pct": 9.98,
+      "vol_r5": 1.35,
+      "vol_r10": 1.66,
+      "prev_vol_r5": 1.04,
+      "vol_trend10": 1.61,
+      "ret3_ex": -0.61,
+      "ret5_ex": 0.82,
+      "ret10_ex": 6.51,
+      "prev_pct": -2.58,
+      "pos10": 0.6,
+      "pos20": 0.54,
+      "amp5": 5.22,
+      "up_days5": 4,
+      "small_body5": 1,
+      "zt_before": 0,
+      "break10": true,
+      "break20": true,
+      "shrink_expand": false,
+      "prev_shrink": false,
+      "prev_yang": false,
+      "above_ma5": false,
+      "above_ma10": true,
+      "ma5_up": true,
+      "higher_low": true,
+      "kl_view": [
+        {
+          "d": "11-04",
+          "pct": 0.42,
+          "tag": "阳",
+          "vol_r": 0.71,
+          "c": 4.76
+        },
+        {
+          "d": "11-05",
+          "pct": 0.42,
+          "tag": "阳",
+          "vol_r": 0.54,
+          "c": 4.78
+        },
+        {
+          "d": "11-06",
+          "pct": -1.88,
+          "tag": "阳",
+          "vol_r": 0.44,
+          "c": 4.69
+        },
+        {
+          "d": "11-09",
+          "pct": 3.84,
+          "tag": "阳",
+          "vol_r": 0.78,
+          "c": 4.87
+        },
+        {
+          "d": "11-10",
+          "pct": -0.21,
+          "tag": "阳",
+          "vol_r": 0.59,
+          "c": 4.86
+        },
+        {
+          "d": "11-11",
+          "pct": 1.65,
+          "tag": "阳",
+          "vol_r": 1.15,
+          "c": 4.94
+        },
+        {
+          "d": "11-12",
+          "pct": 2.02,
+          "tag": "阳",
+          "vol_r": 1.44,
+          "c": 5.04
+        },
+        {
+          "d": "11-13",
+          "pct": -2.58,
+          "tag": "阴",
+          "vol_r": 1.04,
+          "c": 4.91
+        },
+        {
+          "d": "11-16",
+          "pct": 9.98,
+          "tag": "板",
+          "vol_r": 1.35,
+          "c": 5.4
+        }
+      ]
+    },
+    {
+      "code": "603358",
+      "name": "华达科技",
+      "lbc": 1,
+      "hy": "汽车零部",
+      "ltsz": 149.5,
+      "fund": 1.56,
+      "zt_hs": 1.26,
+      "zt_amt": 1.86,
+      "zbc": 0,
+      "today_pct": 9.99,
+      "vol_r5": 0.91,
+      "vol_r10": 0.75,
+      "prev_vol_r5": 1.84,
+      "vol_trend10": 0.7,
+      "ret3_ex": -11.33,
+      "ret5_ex": -11.3,
+      "ret10_ex": -13.08,
+      "prev_pct": -7.45,
+      "pos10": 0.02,
+      "pos20": 0.01,
+      "amp5": 5.19,
+      "up_days5": 2,
+      "small_body5": 3,
+      "zt_before": 0,
+      "break10": false,
+      "break20": false,
+      "shrink_expand": false,
+      "prev_shrink": false,
+      "prev_yang": false,
+      "above_ma5": false,
+      "above_ma10": false,
+      "ma5_up": false,
+      "higher_low": false,
+      "kl_view": [
+        {
+          "d": "11-04",
+          "pct": 7.26,
+          "tag": "阳",
+          "vol_r": 2.04,
+          "c": 33.4
+        },
+        {
+          "d": "11-05",
+          "pct": 1.71,
+          "tag": "阳",
+          "vol_r": 1.1,
+          "c": 33.97
+        },
+        {
+          "d": "11-06",
+          "pct": -4.62,
+          "tag": "阴",
+          "vol_r": 1.36,
+          "c": 32.4
+        },
+        {
+          "d": "11-09",
+          "pct": 2.41,
+          "tag": "阳",
+          "vol_r": 0.78,
+          "c": 33.18
+        },
+        {
+          "d": "11-10",
+          "pct": -0.03,
+          "tag": "阴",
+          "vol_r": 0.67,
+          "c": 33.17
+        },
+        {
+          "d": "11-11",
+          "pct": 0.06,
+          "tag": "阳",
+          "vol_r": 0.8,
+          "c": 33.19
+        },
+        {
+          "d": "11-12",
+          "pct": -4.19,
+          "tag": "阴",
+          "vol_r": 0.92,
+          "c": 31.8
+        },
+        {
+          "d": "11-13",
+          "pct": -7.45,
+          "tag": "阴",
+          "vol_r": 1.84,
+          "c": 29.43
+        },
+        {
+          "d": "11-16",
+          "pct": 9.99,
+          "tag": "板",
+          "vol_r": 0.91,
+          "c": 32.37
+        }
+      ]
+    },
+    {
+      "code": "002685",
+      "name": "华东重机",
+      "lbc": 2,
+      "hy": "工程机械",
+      "ltsz": 61.4,
+      "fund": 3.0,
+      "zt_hs": 13.94,
+      "zt_amt": 8.35,
+      "zbc": 2,
+      "today_pct": 9.93,
+      "vol_r5": 2.57,
+      "vol_r10": 4.01,
+      "prev_vol_r5": 2.05,
+      "vol_trend10": 3.51,
+      "ret3_ex": 15.18,
+      "ret5_ex": 18.12,
+      "ret10_ex": 22.84,
+      "prev_pct": 9.92,
+      "pos10": 1.0,
+      "pos20": 1.0,
+      "amp5": 4.78,
+      "up_days5": 4,
+      "small_body5": 3,
+      "zt_before": 1,
+      "break10": true,
+      "break20": true,
+      "shrink_expand": false,
+      "prev_shrink": false,
+      "prev_yang": true,
+      "above_ma5": true,
+      "above_ma10": true,
+      "ma5_up": true,
+      "higher_low": true,
+      "kl_view": [
+        {
+          "d": "11-04",
+          "pct": 2.66,
+          "tag": "阳",
+          "vol_r": 0.38,
+          "c": 4.63
+        },
+        {
+          "d": "11-05",
+          "pct": 1.51,
+          "tag": "阳",
+          "vol_r": 0.3,
+          "c": 4.7
+        },
+        {
+          "d": "11-06",
+          "pct": -1.7,
+          "tag": "阳",
+          "vol_r": 0.24,
+          "c": 4.62
+        },
+        {
+          "d": "11-09",
+          "pct": 1.52,
+          "tag": "阴",
+          "vol_r": 0.53,
+          "c": 4.69
+        },
+        {
+          "d": "11-10",
+          "pct": 2.99,
+          "tag": "阳",
+          "vol_r": 0.54,
+          "c": 4.83
+        },
+        {
+          "d": "11-11",
+          "pct": -0.41,
+          "tag": "阳",
+          "vol_r": 0.3,
+          "c": 4.81
+        },
+        {
+          "d": "11-12",
+          "pct": 4.78,
+          "tag": "阳",
+          "vol_r": 1.58,
+          "c": 5.04
+        },
+        {
+          "d": "11-13",
+          "pct": 9.92,
+          "tag": "板",
+          "vol_r": 2.05,
+          "c": 5.54
+        },
+        {
+          "d": "11-16",
+          "pct": 9.93,
+          "tag": "板",
+          "vol_r": 2.57,
+          "c": 6.09
+        }
+      ]
+    },
+    {
+      "code": "000820",
+      "name": "神雾节能",
+      "lbc": 1,
+      "hy": "环保设备",
+      "ltsz": 9.9,
+      "fund": 0.18,
+      "zt_hs": 5.43,
+      "zt_amt": 0.53,
+      "zbc": 1,
+      "today_pct": 9.87,
+      "vol_r5": 2.09,
+      "vol_r10": 1.72,
+      "prev_vol_r5": 1.67,
+      "vol_trend10": 0.7,
+      "ret3_ex": -2.56,
+      "ret5_ex": 0.33,
+      "ret10_ex": 2.01,
+      "prev_pct": -0.65,
+      "pos10": 0.54,
+      "pos20": 0.28,
+      "amp5": 3.14,
+      "up_days5": 2,
+      "small_body5": 3,
+      "zt_before": 0,
+      "break10": true,
+      "break20": false,
+      "shrink_expand": false,
+      "prev_shrink": false,
+      "prev_yang": false,
+      "above_ma5": false,
+      "above_ma10": false,
+      "ma5_up": true,
+      "higher_low": true,
+      "kl_view": [
+        {
+          "d": "11-04",
+          "pct": 0.68,
+          "tag": "阴",
+          "vol_r": 1.46,
+          "c": 2.98
+        },
+        {
+          "d": "11-05",
+          "pct": 5.37,
+          "tag": "阳",
+          "vol_r": 1.92,
+          "c": 3.14
+        },
+        {
+          "d": "11-06",
+          "pct": -2.23,
+          "tag": "阳",
+          "vol_r": 1.36,
+          "c": 3.07
+        },
+        {
+          "d": "11-09",
+          "pct": -1.3,
+          "tag": "阴",
+          "vol_r": 1.04,
+          "c": 3.03
+        },
+        {
+          "d": "11-10",
+          "pct": 1.98,
+          "tag": "阳",
+          "vol_r": 0.67,
+          "c": 3.09
+        },
+        {
+          "d": "11-11",
+          "pct": 0.97,
+          "tag": "阳",
+          "vol_r": 0.89,
+          "c": 3.12
+        },
+        {
+          "d": "11-12",
+          "pct": -1.92,
+          "tag": "阴",
+          "vol_r": 0.72,
+          "c": 3.06
+        },
+        {
+          "d": "11-13",
+          "pct": -0.65,
+          "tag": "阴",
+          "vol_r": 1.67,
+          "c": 3.04
+        },
+        {
+          "d": "11-16",
+          "pct": 9.87,
+          "tag": "板",
+          "vol_r": 2.09,
+          "c": 3.34
+        }
+      ]
+    },
+    {
+      "code": "002356",
+      "name": "鹏飞绿能",
+      "lbc": 1,
+      "hy": "一般零售",
+      "ltsz": 33.0,
+      "fund": 0.74,
+      "zt_hs": 3.18,
+      "zt_amt": 1.03,
+      "zbc": 1,
+      "today_pct": 10.04,
+      "vol_r5": 2.27,
+      "vol_r10": 2.1,
+      "prev_vol_r5": 1.81,
+      "vol_trend10": 0.86,
+      "ret3_ex": -2.97,
+      "ret5_ex": -0.87,
+      "ret10_ex": -1.72,
+      "prev_pct": -2.14,
+      "pos10": 0.36,
+      "pos20": 0.26,
+      "amp5": 3.19,
+      "up_days5": 2,
+      "small_body5": 4,
+      "zt_before": 0,
+      "break10": true,
+      "break20": true,
+      "shrink_expand": false,
+      "prev_shrink": false,
+      "prev_yang": false,
+      "above_ma5": false,
+      "above_ma10": false,
+      "ma5_up": false,
+      "higher_low": false,
+      "kl_view": [
+        {
+          "d": "11-04",
+          "pct": 1.3,
+          "tag": "阳",
+          "vol_r": 1.12,
+          "c": 2.34
+        },
+        {
+          "d": "11-05",
+          "pct": 2.14,
+          "tag": "阳",
+          "vol_r": 1.06,
+          "c": 2.39
+        },
+        {
+          "d": "11-06",
+          "pct": -2.51,
+          "tag": "阳",
+          "vol_r": 1.08,
+          "c": 2.33
+        },
+        {
+          "d": "11-09",
+          "pct": -0.86,
+          "tag": "阴",
+          "vol_r": 0.89,
+          "c": 2.31
+        },
+        {
+          "d": "11-10",
+          "pct": 0.87,
+          "tag": "阳",
+          "vol_r": 0.55,
+          "c": 2.33
+        },
+        {
+          "d": "11-11",
+          "pct": 1.29,
+          "tag": "阳",
+          "vol_r": 0.88,
+          "c": 2.36
+        },
+        {
+          "d": "11-12",
+          "pct": -0.85,
+          "tag": "阴",
+          "vol_r": 0.88,
+          "c": 2.34
+        },
+        {
+          "d": "11-13",
+          "pct": -2.14,
+          "tag": "阴",
+          "vol_r": 1.81,
+          "c": 2.29
+        },
+        {
+          "d": "11-16",
+          "pct": 10.04,
+          "tag": "板",
+          "vol_r": 2.27,
+          "c": 2.52
+        }
+      ]
+    },
+    {
+      "code": "605378",
+      "name": "野马电池",
+      "lbc": 1,
+      "hy": "电池",
+      "ltsz": 40.6,
+      "fund": 1.1,
+      "zt_hs": 1.98,
+      "zt_amt": 0.79,
+      "zbc": 0,
+      "today_pct": 9.99,
+      "vol_r5": 0.96,
+      "vol_r10": 0.66,
+      "prev_vol_r5": 0.66,
+      "vol_trend10": 0.53,
+      "ret3_ex": -3.55,
+      "ret5_ex": 1.36,
+      "ret10_ex": 8.12,
+      "prev_pct": -2.01,
+      "pos10": 0.61,
+      "pos20": 0.61,
+      "amp5": 3.19,
+      "up_days5": 2,
+      "small_body5": 4,
+      "zt_before": 0,
+      "break10": true,
+      "break20": true,
+      "shrink_expand": false,
+      "prev_shrink": true,
+      "prev_yang": false,
+      "above_ma5": false,
+      "above_ma10": false,
+      "ma5_up": true,
+      "higher_low": true,
+      "kl_view": [
+        {
+          "d": "11-04",
+          "pct": 0.07,
+          "tag": "阴",
+          "vol_r": 2.82,
+          "c": 14.37
+        },
+        {
+          "d": "11-05",
+          "pct": 2.51,
+          "tag": "阳",
+          "vol_r": 2.82,
+          "c": 14.73
+        },
+        {
+          "d": "11-06",
+          "pct": -5.77,
+          "tag": "阴",
+          "vol_r": 1.83,
+          "c": 13.88
+        },
+        {
+          "d": "11-09",
+          "pct": 0.29,
+          "tag": "阴",
+          "vol_r": 1.06,
+          "c": 13.92
+        },
+        {
+          "d": "11-10",
+          "pct": 2.8,
+          "tag": "阳",
+          "vol_r": 1.08,
+          "c": 14.31
+        },
+        {
+          "d": "11-11",
+          "pct": 2.24,
+          "tag": "阳",
+          "vol_r": 1.23,
+          "c": 14.63
+        },
+        {
+          "d": "11-12",
+          "pct": -1.57,
+          "tag": "阴",
+          "vol_r": 0.96,
+          "c": 14.4
+        },
+        {
+          "d": "11-13",
+          "pct": -2.01,
+          "tag": "阴",
+          "vol_r": 0.66,
+          "c": 14.11
+        },
+        {
+          "d": "11-16",
+          "pct": 9.99,
+          "tag": "板",
+          "vol_r": 0.96,
+          "c": 15.52
+        }
+      ]
+    },
+    {
+      "code": "601188",
+      "name": "龙江交通",
+      "lbc": 1,
+      "hy": "铁路公路",
+      "ltsz": 61.7,
+      "fund": 1.74,
+      "zt_hs": 16.01,
+      "zt_amt": 9.7,
+      "zbc": 2,
+      "today_pct": 10.0,
+      "vol_r5": 0.69,
+      "vol_r10": 0.8,
+      "prev_vol_r5": 0.94,
+      "vol_trend10": 1.35,
+      "ret3_ex": 0.23,
+      "ret5_ex": 2.63,
+      "ret10_ex": 27.98,
+      "prev_pct": -8.9,
+      "pos10": 0.74,
+      "pos20": 0.76,
+      "amp5": 8.93,
+      "up_days5": 3,
+      "small_body5": 2,
+      "zt_before": 0,
+      "break10": true,
+      "break20": true,
+      "shrink_expand": false,
+      "prev_shrink": false,
+      "prev_yang": false,
+      "above_ma5": false,
+      "above_ma10": true,
+      "ma5_up": true,
+      "higher_low": true,
+      "kl_view": [
+        {
+          "d": "11-04",
+          "pct": -4.05,
+          "tag": "阴",
+          "vol_r": 0.91,
+          "c": 3.55
+        },
+        {
+          "d": "11-05",
+          "pct": -2.54,
+          "tag": "阳",
+          "vol_r": 0.58,
+          "c": 3.46
+        },
+        {
+          "d": "11-06",
+          "pct": 10.12,
+          "tag": "板",
+          "vol_r": 0.94,
+          "c": 3.81
+        },
+        {
+          "d": "11-09",
+          "pct": 9.97,
+          "tag": "板",
+          "vol_r": 0.38,
+          "c": 4.19
+        },
+        {
+          "d": "11-10",
+          "pct": 10.02,
+          "tag": "板",
+          "vol_r": 1.41,
+          "c": 4.61
+        },
+        {
+          "d": "11-11",
+          "pct": -6.94,
+          "tag": "阴",
+          "vol_r": 1.12,
+          "c": 4.29
+        },
+        {
+          "d": "11-12",
+          "pct": 10.02,
+          "tag": "板",
+          "vol_r": 1.15,
+          "c": 4.72
+        },
+        {
+          "d": "11-13",
+          "pct": -8.9,
+          "tag": "阴",
+          "vol_r": 0.94,
+          "c": 4.3
+        },
+        {
+          "d": "11-16",
+          "pct": 10.0,
+          "tag": "板",
+          "vol_r": 0.69,
+          "c": 4.73
+        }
+      ]
+    },
+    {
+      "code": "600822",
+      "name": "上海物贸",
+      "lbc": 1,
+      "hy": "汽车服务",
+      "ltsz": 37.4,
+      "fund": 0.7,
+      "zt_hs": 3.63,
+      "zt_amt": 1.34,
+      "zbc": 0,
+      "today_pct": 10.01,
+      "vol_r5": 2.77,
+      "vol_r10": 2.27,
+      "prev_vol_r5": 1.22,
+      "vol_trend10": 0.69,
+      "ret3_ex": -4.02,
+      "ret5_ex": -0.58,
+      "ret10_ex": -1.94,
+      "prev_pct": -3.81,
+      "pos10": 0.59,
+      "pos20": 0.42,
+      "amp5": 2.95,
+      "up_days5": 3,
+      "small_body5": 3,
+      "zt_before": 0,
+      "break10": true,
+      "break20": false,
+      "shrink_expand": false,
+      "prev_shrink": false,
+      "prev_yang": false,
+      "above_ma5": false,
+      "above_ma10": false,
+      "ma5_up": true,
+      "higher_low": false,
+      "kl_view": [
+        {
+          "d": "11-04",
+          "pct": -1.14,
+          "tag": "阴",
+          "vol_r": 1.4,
+          "c": 8.69
+        },
+        {
+          "d": "11-05",
+          "pct": 1.04,
+          "tag": "阳",
+          "vol_r": 1.16,
+          "c": 8.78
+        },
+        {
+          "d": "11-06",
+          "pct": -1.03,
+          "tag": "阳",
+          "vol_r": 1.12,
+          "c": 8.69
+        },
+        {
+          "d": "11-09",
+          "pct": -0.58,
+          "tag": "阴",
+          "vol_r": 0.84,
+          "c": 8.64
+        },
+        {
+          "d": "11-10",
+          "pct": 1.62,
+          "tag": "阳",
+          "vol_r": 0.76,
+          "c": 8.78
+        },
+        {
+          "d": "11-11",
+          "pct": 1.94,
+          "tag": "阳",
+          "vol_r": 1.14,
+          "c": 8.95
+        },
+        {
+          "d": "11-12",
+          "pct": -0.22,
+          "tag": "阳",
+          "vol_r": 1.04,
+          "c": 8.93
+        },
+        {
+          "d": "11-13",
+          "pct": -3.81,
+          "tag": "阴",
+          "vol_r": 1.22,
+          "c": 8.59
+        },
+        {
+          "d": "11-16",
+          "pct": 10.01,
+          "tag": "板",
+          "vol_r": 2.77,
+          "c": 9.45
+        }
+      ]
+    },
+    {
+      "code": "600936",
+      "name": "北投科技",
+      "lbc": 1,
+      "hy": "IT服务Ⅱ",
+      "ltsz": 67.2,
+      "fund": 1.86,
+      "zt_hs": 2.51,
+      "zt_amt": 1.62,
+      "zbc": 0,
+      "today_pct": 10.14,
+      "vol_r5": 2.37,
+      "vol_r10": 1.97,
+      "prev_vol_r5": 0.98,
+      "vol_trend10": 0.71,
+      "ret3_ex": -1.88,
+      "ret5_ex": 0.0,
+      "ret10_ex": 1.11,
+      "prev_pct": 0.27,
+      "pos10": 0.61,
+      "pos20": 0.29,
+      "amp5": 2.51,
+      "up_days5": 2,
+      "small_body5": 3,
+      "zt_before": 0,
+      "break10": true,
+      "break20": false,
+      "shrink_expand": false,
+      "prev_shrink": false,
+      "prev_yang": false,
+      "above_ma5": false,
+      "above_ma10": false,
+      "ma5_up": true,
+      "higher_low": false,
+      "kl_view": [
+        {
+          "d": "11-04",
+          "pct": 2.82,
+          "tag": "阳",
+          "vol_r": 1.58,
+          "c": 3.64
+        },
+        {
+          "d": "11-05",
+          "pct": 3.02,
+          "tag": "阳",
+          "vol_r": 1.47,
+          "c": 3.75
+        },
+        {
+          "d": "11-06",
+          "pct": -1.6,
+          "tag": "阳",
+          "vol_r": 1.1,
+          "c": 3.69
+        },
+        {
+          "d": "11-09",
+          "pct": -1.08,
+          "tag": "阴",
+          "vol_r": 1.01,
+          "c": 3.65
+        },
+        {
+          "d": "11-10",
+          "pct": 1.1,
+          "tag": "阳",
+          "vol_r": 0.73,
+          "c": 3.69
+        },
+        {
+          "d": "11-11",
+          "pct": 0.81,
+          "tag": "阳",
+          "vol_r": 1.09,
+          "c": 3.72
+        },
+        {
+          "d": "11-12",
+          "pct": -2.15,
+          "tag": "阴",
+          "vol_r": 1.19,
+          "c": 3.64
+        },
+        {
+          "d": "11-13",
+          "pct": 0.27,
+          "tag": "阴",
+          "vol_r": 0.98,
+          "c": 3.65
+        },
+        {
+          "d": "11-16",
+          "pct": 10.14,
+          "tag": "板",
+          "vol_r": 2.37,
+          "c": 4.02
+        }
+      ]
+    },
+    {
+      "code": "000521",
+      "name": "长虹美菱",
+      "lbc": 1,
+      "hy": "白色家电",
+      "ltsz": 37.7,
+      "fund": 1.43,
+      "zt_hs": 2.98,
+      "zt_amt": 1.1,
+      "zbc": 0,
+      "today_pct": 9.95,
+      "vol_r5": 4.46,
+      "vol_r10": 3.84,
+      "prev_vol_r5": 0.95,
+      "vol_trend10": 0.75,
+      "ret3_ex": -2.0,
+      "ret5_ex": -3.21,
+      "ret10_ex": -2.0,
+      "prev_pct": -1.01,
+      "pos10": 0.05,
+      "pos20": 0.13,
+      "amp5": 1.56,
+      "up_days5": 1,
+      "small_body5": 5,
+      "zt_before": 0,
+      "break10": true,
+      "break20": false,
+      "shrink_expand": false,
+      "prev_shrink": false,
+      "prev_yang": false,
+      "above_ma5": false,
+      "above_ma10": false,
+      "ma5_up": false,
+      "higher_low": false,
+      "kl_view": [
+        {
+          "d": "11-04",
+          "pct": 0.49,
+          "tag": "阳",
+          "vol_r": 1.4,
+          "c": 4.07
+        },
+        {
+          "d": "11-05",
+          "pct": 0.98,
+          "tag": "阳",
+          "vol_r": 1.09,
+          "c": 4.11
+        },
+        {
+          "d": "11-06",
+          "pct": -1.22,
+          "tag": "阳",
+          "vol_r": 1.23,
+          "c": 4.06
+        },
+        {
+          "d": "11-09",
+          "pct": -0.25,
+          "tag": "阴",
+          "vol_r": 0.97,
+          "c": 4.05
+        },
+        {
+          "d": "11-10",
+          "pct": -0.99,
+          "tag": "阴",
+          "vol_r": 1.18,
+          "c": 4.01
+        },
+        {
+          "d": "11-11",
+          "pct": -0.25,
+          "tag": "阳",
+          "vol_r": 1.14,
+          "c": 4.0
+        },
+        {
+          "d": "11-12",
+          "pct": -1.0,
+          "tag": "阴",
+          "vol_r": 0.75,
+          "c": 3.96
+        },
+        {
+          "d": "11-13",
+          "pct": -1.01,
+          "tag": "阴",
+          "vol_r": 0.95,
+          "c": 3.92
+        },
+        {
+          "d": "11-16",
+          "pct": 9.95,
+          "tag": "板",
+          "vol_r": 4.46,
+          "c": 4.31
+        }
+      ]
+    },
+    {
+      "code": "002035",
+      "name": "华帝股份",
+      "lbc": 1,
+      "hy": "厨卫电器",
+      "ltsz": 36.6,
+      "fund": 0.69,
+      "zt_hs": 7.88,
+      "zt_amt": 2.85,
+      "zbc": 3,
+      "today_pct": 10.12,
+      "vol_r5": 5.13,
+      "vol_r10": 5.35,
+      "prev_vol_r5": 0.68,
+      "vol_trend10": 1.09,
+      "ret3_ex": -2.75,
+      "ret5_ex": -4.71,
+      "ret10_ex": 0.24,
+      "prev_pct": -1.39,
+      "pos10": 0.27,
+      "pos20": 0.19,
+      "amp5": 2.06,
+      "up_days5": 1,
+      "small_body5": 4,
+      "zt_before": 0,
+      "break10": true,
+      "break20": true,
+      "shrink_expand": true,
+      "prev_shrink": true,
+      "prev_yang": false,
+      "above_ma5": false,
+      "above_ma10": false,
+      "ma5_up": true,
+      "higher_low": false,
+      "kl_view": [
+        {
+          "d": "11-04",
+          "pct": 0.46,
+          "tag": "阳",
+          "vol_r": 0.93,
+          "c": 4.33
+        },
+        {
+          "d": "11-05",
+          "pct": 0.69,
+          "tag": "阳",
+          "vol_r": 0.97,
+          "c": 4.36
+        },
+        {
+          "d": "11-06",
+          "pct": -0.69,
+          "tag": "阳",
+          "vol_r": 0.81,
+          "c": 4.33
+        },
+        {
+          "d": "11-09",
+          "pct": 3.0,
+          "tag": "阳",
+          "vol_r": 1.67,
+          "c": 4.46
+        },
+        {
+          "d": "11-10",
+          "pct": -1.57,
+          "tag": "阴",
+          "vol_r": 1.19,
+          "c": 4.39
+        },
+        {
+          "d": "11-11",
+          "pct": -0.46,
+          "tag": "阴",
+          "vol_r": 0.72,
+          "c": 4.37
+        },
+        {
+          "d": "11-12",
+          "pct": -1.37,
+          "tag": "阴",
+          "vol_r": 0.75,
+          "c": 4.31
+        },
+        {
+          "d": "11-13",
+          "pct": -1.39,
+          "tag": "阴",
+          "vol_r": 0.68,
+          "c": 4.25
+        },
+        {
+          "d": "11-16",
+          "pct": 10.12,
+          "tag": "板",
+          "vol_r": 5.13,
+          "c": 4.68
+        }
+      ]
+    },
+    {
+      "code": "600386",
+      "name": "北巴传媒",
+      "lbc": 1,
+      "hy": "汽车服务",
+      "ltsz": 30.7,
+      "fund": 0.65,
+      "zt_hs": 3.89,
+      "zt_amt": 1.17,
+      "zbc": 0,
+      "today_pct": 10.12,
+      "vol_r5": 3.17,
+      "vol_r10": 3.11,
+      "prev_vol_r5": 0.9,
+      "vol_trend10": 0.96,
+      "ret3_ex": -2.54,
+      "ret5_ex": 0.58,
+      "ret10_ex": 2.06,
+      "prev_pct": -2.26,
+      "pos10": 0.76,
+      "pos20": 0.7,
+      "amp5": 2.75,
+      "up_days5": 1,
+      "small_body5": 4,
+      "zt_before": 0,
+      "break10": true,
+      "break20": true,
+      "shrink_expand": false,
+      "prev_shrink": false,
+      "prev_yang": false,
+      "above_ma5": false,
+      "above_ma10": true,
+      "ma5_up": true,
+      "higher_low": true,
+      "kl_view": [
+        {
+          "d": "11-04",
+          "pct": -0.29,
+          "tag": "阴",
+          "vol_r": 0.99,
+          "c": 3.39
+        },
+        {
+          "d": "11-05",
+          "pct": 1.77,
+          "tag": "阳",
+          "vol_r": 0.78,
+          "c": 3.45
+        },
+        {
+          "d": "11-06",
+          "pct": -0.58,
+          "tag": "阳",
+          "vol_r": 0.99,
+          "c": 3.43
+        },
+        {
+          "d": "11-09",
+          "pct": 0.29,
+          "tag": "阴",
+          "vol_r": 0.89,
+          "c": 3.44
+        },
+        {
+          "d": "11-10",
+          "pct": 0.29,
+          "tag": "阴",
+          "vol_r": 0.89,
+          "c": 3.45
+        },
+        {
+          "d": "11-11",
+          "pct": 2.9,
+          "tag": "阳",
+          "vol_r": 1.24,
+          "c": 3.55
+        },
+        {
+          "d": "11-12",
+          "pct": -0.28,
+          "tag": "阴",
+          "vol_r": 1.08,
+          "c": 3.54
+        },
+        {
+          "d": "11-13",
+          "pct": -2.26,
+          "tag": "阴",
+          "vol_r": 0.9,
+          "c": 3.46
+        },
+        {
+          "d": "11-16",
+          "pct": 10.12,
+          "tag": "板",
+          "vol_r": 3.17,
+          "c": 3.81
+        }
+      ]
+    },
+    {
+      "code": "001318",
+      "name": "阳光乳业",
+      "lbc": 1,
+      "hy": "饮料乳品",
+      "ltsz": 41.3,
+      "fund": 1.24,
+      "zt_hs": 12.0,
+      "zt_amt": 4.79,
+      "zbc": 0,
+      "today_pct": 10.01,
+      "vol_r5": 0.96,
+      "vol_r10": 0.92,
+      "prev_vol_r5": 0.99,
+      "vol_trend10": 0.91,
+      "ret3_ex": -5.68,
+      "ret5_ex": -0.45,
+      "ret10_ex": -7.71,
+      "prev_pct": -10.02,
+      "pos10": 0.11,
+      "pos20": 0.46,
+      "amp5": 8.83,
+      "up_days5": 3,
+      "small_body5": 1,
+      "zt_before": 0,
+      "break10": false,
+      "break20": false,
+      "shrink_expand": false,
+      "prev_shrink": false,
+      "prev_yang": false,
+      "above_ma5": false,
+      "above_ma10": false,
+      "ma5_up": false,
+      "higher_low": true,
+      "kl_view": [
+        {
+          "d": "11-04",
+          "pct": -9.97,
+          "tag": "跌停",
+          "vol_r": 0.46,
+          "c": 14.26
+        },
+        {
+          "d": "11-05",
+          "pct": -0.7,
+          "tag": "阳",
+          "vol_r": 1.19,
+          "c": 14.16
+        },
+        {
+          "d": "11-06",
+          "pct": -6.78,
+          "tag": "阴",
+          "vol_r": 0.96,
+          "c": 13.2
+        },
+        {
+          "d": "11-09",
+          "pct": 1.14,
+          "tag": "阳",
+          "vol_r": 0.81,
+          "c": 13.35
+        },
+        {
+          "d": "11-10",
+          "pct": 10.04,
+          "tag": "板",
+          "vol_r": 0.79,
+          "c": 14.69
+        },
+        {
+          "d": "11-11",
+          "pct": -4.08,
+          "tag": "阴",
+          "vol_r": 1.17,
+          "c": 14.09
+        },
+        {
+          "d": "11-12",
+          "pct": 4.83,
+          "tag": "阳",
+          "vol_r": 1.24,
+          "c": 14.77
+        },
+        {
+          "d": "11-13",
+          "pct": -10.02,
+          "tag": "跌停",
+          "vol_r": 0.99,
+          "c": 13.29
+        },
+        {
+          "d": "11-16",
+          "pct": 10.01,
+          "tag": "板",
+          "vol_r": 0.96,
+          "c": 14.62
+        }
+      ]
+    },
+    {
+      "code": "601929",
+      "name": "吉视传媒",
+      "lbc": 1,
+      "hy": "电视广播",
+      "ltsz": 103.3,
+      "fund": 4.96,
+      "zt_hs": 14.13,
+      "zt_amt": 13.91,
+      "zbc": 0,
+      "today_pct": 10.04,
+      "vol_r5": 1.05,
+      "vol_r10": 1.44,
+      "prev_vol_r5": 1.65,
+      "vol_trend10": 2.2,
+      "ret3_ex": 5.49,
+      "ret5_ex": 12.08,
+      "ret10_ex": 19.56,
+      "prev_pct": -4.27,
+      "pos10": 0.66,
+      "pos20": 0.66,
+      "amp5": 8.36,
+      "up_days5": 3,
+      "small_body5": 2,
+      "zt_before": 0,
+      "break10": false,
+      "break20": false,
+      "shrink_expand": false,
+      "prev_shrink": false,
+      "prev_yang": false,
+      "above_ma5": true,
+      "above_ma10": true,
+      "ma5_up": true,
+      "higher_low": true,
+      "kl_view": [
+        {
+          "d": "11-04",
+          "pct": 2.25,
+          "tag": "阳",
+          "vol_r": 0.36,
+          "c": 2.27
+        },
+        {
+          "d": "11-05",
+          "pct": 10.13,
+          "tag": "板",
+          "vol_r": 0.53,
+          "c": 2.5
+        },
+        {
+          "d": "11-06",
+          "pct": -4.4,
+          "tag": "阴",
+          "vol_r": 0.59,
+          "c": 2.39
+        },
+        {
+          "d": "11-09",
+          "pct": 0.42,
+          "tag": "阴",
+          "vol_r": 0.46,
+          "c": 2.4
+        },
+        {
+          "d": "11-10",
+          "pct": 5.0,
+          "tag": "阳",
+          "vol_r": 0.67,
+          "c": 2.52
+        },
+        {
+          "d": "11-11",
+          "pct": 1.19,
+          "tag": "阳",
+          "vol_r": 0.72,
+          "c": 2.55
+        },
+        {
+          "d": "11-12",
+          "pct": 10.2,
+          "tag": "板",
+          "vol_r": 1.51,
+          "c": 2.81
+        },
+        {
+          "d": "11-13",
+          "pct": -4.27,
+          "tag": "阴",
+          "vol_r": 1.65,
+          "c": 2.69
+        },
+        {
+          "d": "11-16",
+          "pct": 10.04,
+          "tag": "板",
+          "vol_r": 1.05,
+          "c": 2.96
+        }
+      ]
+    },
+    {
+      "code": "002058",
+      "name": "紫竹高科",
+      "lbc": 1,
+      "hy": "电池",
+      "ltsz": 32.1,
+      "fund": 1.83,
+      "zt_hs": 9.51,
+      "zt_amt": 2.92,
+      "zbc": 0,
+      "today_pct": 10.02,
+      "vol_r5": 1.02,
+      "vol_r10": 0.8,
+      "prev_vol_r5": 0.58,
+      "vol_trend10": 0.64,
+      "ret3_ex": -6.69,
+      "ret5_ex": -0.44,
+      "ret10_ex": 5.99,
+      "prev_pct": -3.32,
+      "pos10": 0.45,
+      "pos20": 0.47,
+      "amp5": 5.1,
+      "up_days5": 2,
+      "small_body5": 1,
+      "zt_before": 0,
+      "break10": false,
+      "break20": false,
+      "shrink_expand": false,
+      "prev_shrink": true,
+      "prev_yang": false,
+      "above_ma5": false,
+      "above_ma10": false,
+      "ma5_up": false,
+      "higher_low": true,
+      "kl_view": [
+        {
+          "d": "11-04",
+          "pct": 9.99,
+          "tag": "板",
+          "vol_r": 2.24,
+          "c": 23.24
+        },
+        {
+          "d": "11-05",
+          "pct": -5.85,
+          "tag": "阳",
+          "vol_r": 2.23,
+          "c": 21.88
+        },
+        {
+          "d": "11-06",
+          "pct": -7.18,
+          "tag": "阳",
+          "vol_r": 1.35,
+          "c": 20.31
+        },
+        {
+          "d": "11-09",
+          "pct": 0.69,
+          "tag": "阴",
+          "vol_r": 0.99,
+          "c": 20.45
+        },
+        {
+          "d": "11-10",
+          "pct": 4.25,
+          "tag": "阳",
+          "vol_r": 1.07,
+          "c": 21.32
+        },
+        {
+          "d": "11-11",
+          "pct": 2.35,
+          "tag": "阳",
+          "vol_r": 1.32,
+          "c": 21.82
+        },
+        {
+          "d": "11-12",
+          "pct": -3.48,
+          "tag": "阴",
+          "vol_r": 1.04,
+          "c": 21.06
+        },
+        {
+          "d": "11-13",
+          "pct": -3.32,
+          "tag": "阴",
+          "vol_r": 0.58,
+          "c": 20.36
+        },
+        {
+          "d": "11-16",
+          "pct": 10.02,
+          "tag": "板",
+          "vol_r": 1.02,
+          "c": 22.4
+        }
+      ]
+    },
+    {
+      "code": "002748",
+      "name": "世龙实业",
+      "lbc": 2,
+      "hy": "化学原料",
+      "ltsz": 32.7,
+      "fund": 0.64,
+      "zt_hs": 12.95,
+      "zt_amt": 4.08,
+      "zbc": 2,
+      "today_pct": 10.01,
+      "vol_r5": 2.39,
+      "vol_r10": 2.92,
+      "prev_vol_r5": 2.18,
+      "vol_trend10": 1.56,
+      "ret3_ex": 13.36,
+      "ret5_ex": 15.36,
+      "ret10_ex": 21.83,
+      "prev_pct": 10.04,
+      "pos10": 1.0,
+      "pos20": 0.58,
+      "amp5": 4.85,
+      "up_days5": 3,
+      "small_body5": 3,
+      "zt_before": 1,
+      "break10": true,
+      "break20": false,
+      "shrink_expand": false,
+      "prev_shrink": false,
+      "prev_yang": true,
+      "above_ma5": true,
+      "above_ma10": true,
+      "ma5_up": true,
+      "higher_low": true,
+      "kl_view": [
+        {
+          "d": "11-04",
+          "pct": 0.69,
+          "tag": "阳",
+          "vol_r": 0.71,
+          "c": 10.28
+        },
+        {
+          "d": "11-05",
+          "pct": 3.02,
+          "tag": "阳",
+          "vol_r": 0.7,
+          "c": 10.59
+        },
+        {
+          "d": "11-06",
+          "pct": 0.28,
+          "tag": "阳",
+          "vol_r": 0.44,
+          "c": 10.62
+        },
+        {
+          "d": "11-09",
+          "pct": 1.13,
+          "tag": "阴",
+          "vol_r": 0.76,
+          "c": 10.74
+        },
+        {
+          "d": "11-10",
+          "pct": 1.49,
+          "tag": "阳",
+          "vol_r": 0.46,
+          "c": 10.9
+        },
+        {
+          "d": "11-11",
+          "pct": 0.28,
+          "tag": "阳",
+          "vol_r": 0.33,
+          "c": 10.93
+        },
+        {
+          "d": "11-12",
+          "pct": 3.02,
+          "tag": "阴",
+          "vol_r": 1.26,
+          "c": 11.26
+        },
+        {
+          "d": "11-13",
+          "pct": 10.04,
+          "tag": "板",
+          "vol_r": 2.18,
+          "c": 12.39
+        },
+        {
+          "d": "11-16",
+          "pct": 10.01,
+          "tag": "板",
+          "vol_r": 2.39,
+          "c": 13.63
+        }
+      ]
+    },
+    {
+      "code": "300530",
+      "name": "领湃科技",
+      "lbc": 1,
+      "hy": "电池",
+      "ltsz": 47.9,
+      "fund": 2.74,
+      "zt_hs": 10.03,
+      "zt_amt": 4.42,
+      "zbc": 0,
+      "today_pct": 20.01,
+      "vol_r5": 1.88,
+      "vol_r10": 1.29,
+      "prev_vol_r5": 0.94,
+      "vol_trend10": 0.52,
+      "ret3_ex": -8.3,
+      "ret5_ex": -4.29,
+      "ret10_ex": -2.56,
+      "prev_pct": -6.79,
+      "pos10": 0.29,
+      "pos20": 0.23,
+      "amp5": 5.17,
+      "up_days5": 1,
+      "small_body5": 2,
+      "zt_before": 0,
+      "break10": false,
+      "break20": false,
+      "shrink_expand": false,
+      "prev_shrink": false,
+      "prev_yang": false,
+      "above_ma5": false,
+      "above_ma10": false,
+      "ma5_up": false,
+      "higher_low": false,
+      "kl_view": [
+        {
+          "d": "11-04",
+          "pct": 1.48,
+          "tag": "阳",
+          "vol_r": 2.22,
+          "c": 26.02
+        },
+        {
+          "d": "11-05",
+          "pct": -1.23,
+          "tag": "阳",
+          "vol_r": 2.17,
+          "c": 25.7
+        },
+        {
+          "d": "11-06",
+          "pct": -6.34,
+          "tag": "阳",
+          "vol_r": 1.37,
+          "c": 24.07
+        },
+        {
+          "d": "11-09",
+          "pct": 0.66,
+          "tag": "阴",
+          "vol_r": 1.0,
+          "c": 24.23
+        },
+        {
+          "d": "11-10",
+          "pct": 5.24,
+          "tag": "阳",
+          "vol_r": 1.16,
+          "c": 25.5
+        },
+        {
+          "d": "11-11",
+          "pct": -0.82,
+          "tag": "阴",
+          "vol_r": 0.96,
+          "c": 25.29
+        },
+        {
+          "d": "11-12",
+          "pct": -1.62,
+          "tag": "阴",
+          "vol_r": 0.95,
+          "c": 24.88
+        },
+        {
+          "d": "11-13",
+          "pct": -6.79,
+          "tag": "阴",
+          "vol_r": 0.94,
+          "c": 23.19
+        },
+        {
+          "d": "11-16",
+          "pct": 20.01,
+          "tag": "板",
+          "vol_r": 1.88,
+          "c": 27.83
+        }
+      ]
+    },
+    {
+      "code": "603983",
+      "name": "丸美生物",
+      "lbc": 1,
+      "hy": "化妆品",
+      "ltsz": 107.2,
+      "fund": 1.06,
+      "zt_hs": 1.88,
+      "zt_amt": 1.94,
+      "zbc": 2,
+      "today_pct": 10.0,
+      "vol_r5": 3.74,
+      "vol_r10": 3.03,
+      "prev_vol_r5": 1.73,
+      "vol_trend10": 0.68,
+      "ret3_ex": 0.66,
+      "ret5_ex": 1.72,
+      "ret10_ex": 5.33,
+      "prev_pct": 1.17,
+      "pos10": 0.63,
+      "pos20": 0.38,
+      "amp5": 2.94,
+      "up_days5": 2,
+      "small_body5": 4,
+      "zt_before": 0,
+      "break10": true,
+      "break20": false,
+      "shrink_expand": false,
+      "prev_shrink": false,
+      "prev_yang": true,
+      "above_ma5": true,
+      "above_ma10": true,
+      "ma5_up": true,
+      "higher_low": false,
+      "kl_view": [
+        {
+          "d": "11-04",
+          "pct": 2.85,
+          "tag": "阳",
+          "vol_r": 1.28,
+          "c": 23.84
+        },
+        {
+          "d": "11-05",
+          "pct": 4.53,
+          "tag": "阳",
+          "vol_r": 1.7,
+          "c": 24.92
+        },
+        {
+          "d": "11-06",
+          "pct": -2.81,
+          "tag": "阴",
+          "vol_r": 1.11,
+          "c": 24.22
+        },
+        {
+          "d": "11-09",
+          "pct": -1.36,
+          "tag": "阴",
+          "vol_r": 0.8,
+          "c": 23.89
+        },
+        {
+          "d": "11-10",
+          "pct": 0.54,
+          "tag": "阴",
+          "vol_r": 0.85,
+          "c": 24.02
+        },
+        {
+          "d": "11-11",
+          "pct": 0.5,
+          "tag": "阳",
+          "vol_r": 0.65,
+          "c": 24.14
+        },
+        {
+          "d": "11-12",
+          "pct": -0.5,
+          "tag": "阴",
+          "vol_r": 0.97,
+          "c": 24.02
+        },
+        {
+          "d": "11-13",
+          "pct": 1.17,
+          "tag": "阳",
+          "vol_r": 1.73,
+          "c": 24.3
+        },
+        {
+          "d": "11-16",
+          "pct": 10.0,
+          "tag": "板",
+          "vol_r": 3.74,
+          "c": 26.73
+        }
+      ]
+    },
+    {
+      "code": "002959",
+      "name": "小熊电器",
+      "lbc": 1,
+      "hy": "小家电",
+      "ltsz": 50.7,
+      "fund": 0.8,
+      "zt_hs": 3.35,
+      "zt_amt": 1.64,
+      "zbc": 0,
+      "today_pct": 10.01,
+      "vol_r5": 3.08,
+      "vol_r10": 2.66,
+      "prev_vol_r5": 1.19,
+      "vol_trend10": 0.76,
+      "ret3_ex": -0.72,
+      "ret5_ex": -2.8,
+      "ret10_ex": 0.49,
+      "prev_pct": 1.32,
+      "pos10": 0.37,
+      "pos20": 0.15,
+      "amp5": 2.23,
+      "up_days5": 1,
+      "small_body5": 5,
+      "zt_before": 0,
+      "break10": true,
+      "break20": false,
+      "shrink_expand": false,
+      "prev_shrink": false,
+      "prev_yang": true,
+      "above_ma5": false,
+      "above_ma10": false,
+      "ma5_up": false,
+      "higher_low": false,
+      "kl_view": [
+        {
+          "d": "11-04",
+          "pct": 0.66,
+          "tag": "阳",
+          "vol_r": 1.25,
+          "c": 33.33
+        },
+        {
+          "d": "11-05",
+          "pct": 3.81,
+          "tag": "阳",
+          "vol_r": 1.88,
+          "c": 34.6
+        },
+        {
+          "d": "11-06",
+          "pct": -1.59,
+          "tag": "阴",
+          "vol_r": 1.04,
+          "c": 34.05
+        },
+        {
+          "d": "11-09",
+          "pct": -0.38,
+          "tag": "阴",
+          "vol_r": 0.9,
+          "c": 33.92
+        },
+        {
+          "d": "11-10",
+          "pct": -0.53,
+          "tag": "阴",
+          "vol_r": 0.87,
+          "c": 33.74
+        },
+        {
+          "d": "11-11",
+          "pct": -1.57,
+          "tag": "阴",
+          "vol_r": 0.97,
+          "c": 33.21
+        },
+        {
+          "d": "11-12",
+          "pct": -2.02,
+          "tag": "阴",
+          "vol_r": 1.06,
+          "c": 32.54
+        },
+        {
+          "d": "11-13",
+          "pct": 1.32,
+          "tag": "阳",
+          "vol_r": 1.19,
+          "c": 32.97
+        },
+        {
+          "d": "11-16",
+          "pct": 10.01,
+          "tag": "板",
+          "vol_r": 3.08,
+          "c": 36.27
+        }
+      ]
+    },
+    {
+      "code": "300824",
+      "name": "北鼎股份",
+      "lbc": 1,
+      "hy": "小家电",
+      "ltsz": 27.4,
+      "fund": 0.23,
+      "zt_hs": 8.49,
+      "zt_amt": 2.2,
+      "zbc": 2,
+      "today_pct": 19.94,
+      "vol_r5": 10.8,
+      "vol_r10": 7.53,
+      "prev_vol_r5": 0.88,
+      "vol_trend10": 0.53,
+      "ret3_ex": -2.85,
+      "ret5_ex": -0.14,
+      "ret10_ex": -1.1,
+      "prev_pct": -0.83,
+      "pos10": 0.45,
+      "pos20": 0.22,
+      "amp5": 2.43,
+      "up_days5": 2,
+      "small_body5": 3,
+      "zt_before": 0,
+      "break10": true,
+      "break20": true,
+      "shrink_expand": false,
+      "prev_shrink": false,
+      "prev_yang": false,
+      "above_ma5": false,
+      "above_ma10": false,
+      "ma5_up": false,
+      "higher_low": true,
+      "kl_view": [
+        {
+          "d": "11-04",
+          "pct": -0.69,
+          "tag": "阴",
+          "vol_r": 2.0,
+          "c": 7.22
+        },
+        {
+          "d": "11-05",
+          "pct": 3.88,
+          "tag": "阳",
+          "vol_r": 2.34,
+          "c": 7.5
+        },
+        {
+          "d": "11-06",
+          "pct": -2.13,
+          "tag": "阳",
+          "vol_r": 1.36,
+          "c": 7.34
+        },
+        {
+          "d": "11-09",
+          "pct": -2.18,
+          "tag": "阴",
+          "vol_r": 1.39,
+          "c": 7.18
+        },
+        {
+          "d": "11-10",
+          "pct": 1.11,
+          "tag": "阳",
+          "vol_r": 0.86,
+          "c": 7.26
+        },
+        {
+          "d": "11-11",
+          "pct": 1.65,
+          "tag": "阳",
+          "vol_r": 0.77,
+          "c": 7.38
+        },
+        {
+          "d": "11-12",
+          "pct": -2.03,
+          "tag": "阴",
+          "vol_r": 1.1,
+          "c": 7.23
+        },
+        {
+          "d": "11-13",
+          "pct": -0.83,
+          "tag": "阴",
+          "vol_r": 0.88,
+          "c": 7.17
+        },
+        {
+          "d": "11-16",
+          "pct": 19.94,
+          "tag": "板",
+          "vol_r": 10.8,
+          "c": 8.6
+        }
+      ]
+    },
+    {
+      "code": "000156",
+      "name": "华数传媒",
+      "lbc": 1,
+      "hy": "电视广播",
+      "ltsz": 145.2,
+      "fund": 2.56,
+      "zt_hs": 3.48,
+      "zt_amt": 4.8,
+      "zbc": 0,
+      "today_pct": 10.05,
+      "vol_r5": 1.86,
+      "vol_r10": 1.64,
+      "prev_vol_r5": 1.09,
+      "vol_trend10": 0.79,
+      "ret3_ex": -1.9,
+      "ret5_ex": 0.78,
+      "ret10_ex": 6.59,
+      "prev_pct": 1.57,
+      "pos10": 0.84,
+      "pos20": 0.71,
+      "amp5": 3.67,
+      "up_days5": 3,
+      "small_body5": 3,
+      "zt_before": 0,
+      "break10": true,
+      "break20": true,
+      "shrink_expand": false,
+      "prev_shrink": false,
+      "prev_yang": true,
+      "above_ma5": false,
+      "above_ma10": true,
+      "ma5_up": true,
+      "higher_low": true,
+      "kl_view": [
+        {
+          "d": "11-04",
+          "pct": 3.36,
+          "tag": "阳",
+          "vol_r": 1.37,
+          "c": 7.7
+        },
+        {
+          "d": "11-05",
+          "pct": 1.43,
+          "tag": "阳",
+          "vol_r": 1.2,
+          "c": 7.81
+        },
+        {
+          "d": "11-06",
+          "pct": -0.13,
+          "tag": "阳",
+          "vol_r": 1.06,
+          "c": 7.8
+        },
+        {
+          "d": "11-09",
+          "pct": -1.28,
+          "tag": "阴",
+          "vol_r": 0.81,
+          "c": 7.7
+        },
+        {
+          "d": "11-10",
+          "pct": 2.86,
+          "tag": "阳",
+          "vol_r": 1.22,
+          "c": 7.92
+        },
+        {
+          "d": "11-11",
+          "pct": -0.13,
+          "tag": "阳",
+          "vol_r": 0.88,
+          "c": 7.91
+        },
+        {
+          "d": "11-12",
+          "pct": -3.41,
+          "tag": "阴",
+          "vol_r": 1.0,
+          "c": 7.64
+        },
+        {
+          "d": "11-13",
+          "pct": 1.57,
+          "tag": "阳",
+          "vol_r": 1.09,
+          "c": 7.76
+        },
+        {
+          "d": "11-16",
+          "pct": 10.05,
+          "tag": "板",
+          "vol_r": 1.86,
+          "c": 8.54
+        }
+      ]
+    },
+    {
+      "code": "603813",
+      "name": "原尚股份",
+      "lbc": 1,
+      "hy": "物流",
+      "ltsz": 24.7,
+      "fund": 0.16,
+      "zt_hs": 2.71,
+      "zt_amt": 0.64,
+      "zbc": 0,
+      "today_pct": 10.0,
+      "vol_r5": 2.61,
+      "vol_r10": 2.29,
+      "prev_vol_r5": 1.69,
+      "vol_trend10": 0.79,
+      "ret3_ex": 1.52,
+      "ret5_ex": 5.73,
+      "ret10_ex": 4.8,
+      "prev_pct": 2.44,
+      "pos10": 0.83,
+      "pos20": 0.4,
+      "amp5": 4.61,
+      "up_days5": 3,
+      "small_body5": 4,
+      "zt_before": 0,
+      "break10": true,
+      "break20": false,
+      "shrink_expand": false,
+      "prev_shrink": false,
+      "prev_yang": true,
+      "above_ma5": true,
+      "above_ma10": true,
+      "ma5_up": true,
+      "higher_low": true,
+      "kl_view": [
+        {
+          "d": "11-04",
+          "pct": -0.97,
+          "tag": "阴",
+          "vol_r": 1.59,
+          "c": 20.45
+        },
+        {
+          "d": "11-05",
+          "pct": 2.59,
+          "tag": "阳",
+          "vol_r": 1.29,
+          "c": 20.98
+        },
+        {
+          "d": "11-06",
+          "pct": -2.19,
+          "tag": "阳",
+          "vol_r": 0.85,
+          "c": 20.52
+        },
+        {
+          "d": "11-09",
+          "pct": -1.41,
+          "tag": "阴",
+          "vol_r": 0.92,
+          "c": 20.23
+        },
+        {
+          "d": "11-10",
+          "pct": 2.62,
+          "tag": "阳",
+          "vol_r": 0.85,
+          "c": 20.76
+        },
+        {
+          "d": "11-11",
+          "pct": 1.49,
+          "tag": "阳",
+          "vol_r": 0.83,
+          "c": 21.07
+        },
+        {
+          "d": "11-12",
+          "pct": -0.9,
+          "tag": "阴",
+          "vol_r": 0.71,
+          "c": 20.88
+        },
+        {
+          "d": "11-13",
+          "pct": 2.44,
+          "tag": "阳",
+          "vol_r": 1.69,
+          "c": 21.39
+        },
+        {
+          "d": "11-16",
+          "pct": 10.0,
+          "tag": "板",
+          "vol_r": 2.61,
+          "c": 23.53
+        }
+      ]
+    },
+    {
+      "code": "000533",
+      "name": "顺钠股份",
+      "lbc": 1,
+      "hy": "电网设备",
+      "ltsz": 67.3,
+      "fund": 6.04,
+      "zt_hs": 4.83,
+      "zt_amt": 3.08,
+      "zbc": 0,
+      "today_pct": 9.97,
+      "vol_r5": 0.57,
+      "vol_r10": 0.68,
+      "prev_vol_r5": 0.55,
+      "vol_trend10": 1.47,
+      "ret3_ex": -6.98,
+      "ret5_ex": -11.58,
+      "ret10_ex": 3.96,
+      "prev_pct": -3.56,
+      "pos10": 0.34,
+      "pos20": 0.34,
+      "amp5": 4.42,
+      "up_days5": 2,
+      "small_body5": 1,
+      "zt_before": 0,
+      "break10": false,
+      "break20": false,
+      "shrink_expand": false,
+      "prev_shrink": true,
+      "prev_yang": false,
+      "above_ma5": false,
+      "above_ma10": false,
+      "ma5_up": true,
+      "higher_low": false,
+      "kl_view": [
+        {
+          "d": "11-04",
+          "pct": 3.14,
+          "tag": "阳",
+          "vol_r": 0.43,
+          "c": 8.88
+        },
+        {
+          "d": "11-05",
+          "pct": 10.02,
+          "tag": "板",
+          "vol_r": 0.44,
+          "c": 9.77
+        },
+        {
+          "d": "11-06",
+          "pct": -1.64,
+          "tag": "阴",
+          "vol_r": 1.83,
+          "c": 9.61
+        },
+        {
+          "d": "11-09",
+          "pct": 5.1,
+          "tag": "阳",
+          "vol_r": 1.61,
+          "c": 10.1
+        },
+        {
+          "d": "11-10",
+          "pct": -1.39,
+          "tag": "阳",
+          "vol_r": 1.13,
+          "c": 9.96
+        },
+        {
+          "d": "11-11",
+          "pct": -3.61,
+          "tag": "阴",
+          "vol_r": 0.95,
+          "c": 9.6
+        },
+        {
+          "d": "11-12",
+          "pct": -3.54,
+          "tag": "阴",
+          "vol_r": 0.76,
+          "c": 9.26
+        },
+        {
+          "d": "11-13",
+          "pct": -3.56,
+          "tag": "阴",
+          "vol_r": 0.55,
+          "c": 8.93
+        },
+        {
+          "d": "11-16",
+          "pct": 9.97,
+          "tag": "板",
+          "vol_r": 0.57,
+          "c": 9.82
+        }
+      ]
+    },
+    {
+      "code": "000595",
+      "name": "新能股份",
+      "lbc": 2,
+      "hy": "电力",
+      "ltsz": 69.2,
+      "fund": 2.73,
+      "zt_hs": 7.67,
+      "zt_amt": 4.97,
+      "zbc": 0,
+      "today_pct": 9.95,
+      "vol_r5": 1.42,
+      "vol_r10": 2.27,
+      "prev_vol_r5": 1.02,
+      "vol_trend10": 3.96,
+      "ret3_ex": 7.8,
+      "ret5_ex": 0.36,
+      "ret10_ex": 17.91,
+      "prev_pct": 9.94,
+      "pos10": 0.72,
+      "pos20": 0.72,
+      "amp5": 5.7,
+      "up_days5": 2,
+      "small_body5": 3,
+      "zt_before": 1,
+      "break10": true,
+      "break20": true,
+      "shrink_expand": true,
+      "prev_shrink": false,
+      "prev_yang": true,
+      "above_ma5": true,
+      "above_ma10": true,
+      "ma5_up": true,
+      "higher_low": false,
+      "kl_view": [
+        {
+          "d": "11-04",
+          "pct": 0.64,
+          "tag": "阳",
+          "vol_r": 0.23,
+          "c": 4.71
+        },
+        {
+          "d": "11-05",
+          "pct": 3.82,
+          "tag": "阳",
+          "vol_r": 0.33,
+          "c": 4.89
+        },
+        {
+          "d": "11-06",
+          "pct": 10.02,
+          "tag": "板",
+          "vol_r": 0.33,
+          "c": 5.38
+        },
+        {
+          "d": "11-09",
+          "pct": 2.42,
+          "tag": "阴",
+          "vol_r": 1.61,
+          "c": 5.51
+        },
+        {
+          "d": "11-10",
+          "pct": -2.36,
+          "tag": "阳",
+          "vol_r": 1.06,
+          "c": 5.38
+        },
+        {
+          "d": "11-11",
+          "pct": -4.65,
+          "tag": "阴",
+          "vol_r": 0.75,
+          "c": 5.13
+        },
+        {
+          "d": "11-12",
+          "pct": -1.95,
+          "tag": "阴",
+          "vol_r": 0.56,
+          "c": 5.03
+        },
+        {
+          "d": "11-13",
+          "pct": 9.94,
+          "tag": "板",
+          "vol_r": 1.02,
+          "c": 5.53
+        },
+        {
+          "d": "11-16",
+          "pct": 9.95,
+          "tag": "板",
+          "vol_r": 1.42,
+          "c": 6.08
+        }
+      ]
+    },
+    {
+      "code": "000628",
+      "name": "高新发展",
+      "lbc": 1,
+      "hy": "房屋建设",
+      "ltsz": 89.5,
+      "fund": 2.76,
+      "zt_hs": 8.29,
+      "zt_amt": 7.08,
+      "zbc": 1,
+      "today_pct": 10.0,
+      "vol_r5": 1.86,
+      "vol_r10": 2.1,
+      "prev_vol_r5": 1.48,
+      "vol_trend10": 1.3,
+      "ret3_ex": -1.08,
+      "ret5_ex": 2.87,
+      "ret10_ex": 7.66,
+      "prev_pct": -1.17,
+      "pos10": 0.69,
+      "pos20": 0.61,
+      "amp5": 4.15,
+      "up_days5": 3,
+      "small_body5": 4,
+      "zt_before": 0,
+      "break10": true,
+      "break20": true,
+      "shrink_expand": false,
+      "prev_shrink": false,
+      "prev_yang": false,
+      "above_ma5": true,
+      "above_ma10": true,
+      "ma5_up": true,
+      "higher_low": true,
+      "kl_view": [
+        {
+          "d": "11-04",
+          "pct": 5.29,
+          "tag": "阳",
+          "vol_r": 0.86,
+          "c": 40.0
+        },
+        {
+          "d": "11-05",
+          "pct": 3.6,
+          "tag": "阳",
+          "vol_r": 0.89,
+          "c": 41.44
+        },
+        {
+          "d": "11-06",
+          "pct": -2.53,
+          "tag": "阳",
+          "vol_r": 0.73,
+          "c": 40.39
+        },
+        {
+          "d": "11-09",
+          "pct": 1.86,
+          "tag": "阳",
+          "vol_r": 0.75,
+          "c": 41.14
+        },
+        {
+          "d": "11-10",
+          "pct": 3.31,
+          "tag": "阳",
+          "vol_r": 0.81,
+          "c": 42.5
+        },
+        {
+          "d": "11-11",
+          "pct": 0.66,
+          "tag": "阴",
+          "vol_r": 0.87,
+          "c": 42.78
+        },
+        {
+          "d": "11-12",
+          "pct": 0.09,
+          "tag": "阳",
+          "vol_r": 1.08,
+          "c": 42.82
+        },
+        {
+          "d": "11-13",
+          "pct": -1.17,
+          "tag": "阴",
+          "vol_r": 1.48,
+          "c": 42.32
+        },
+        {
+          "d": "11-16",
+          "pct": 10.0,
+          "tag": "板",
+          "vol_r": 1.86,
+          "c": 46.55
+        }
+      ]
+    },
+    {
+      "code": "603118",
+      "name": "共进股份",
+      "lbc": 1,
+      "hy": "通信设备",
+      "ltsz": 115.8,
+      "fund": 4.77,
+      "zt_hs": 14.26,
+      "zt_amt": 15.88,
+      "zbc": 0,
+      "today_pct": 10.02,
+      "vol_r5": 2.07,
+      "vol_r10": 2.39,
+      "prev_vol_r5": 2.08,
+      "vol_trend10": 1.37,
+      "ret3_ex": 4.45,
+      "ret5_ex": 8.96,
+      "ret10_ex": 13.5,
+      "prev_pct": 5.28,
+      "pos10": 0.78,
+      "pos20": 0.78,
+      "amp5": 4.82,
+      "up_days5": 3,
+      "small_body5": 3,
+      "zt_before": 0,
+      "break10": true,
+      "break20": true,
+      "shrink_expand": false,
+      "prev_shrink": false,
+      "prev_yang": true,
+      "above_ma5": true,
+      "above_ma10": true,
+      "ma5_up": true,
+      "higher_low": true,
+      "kl_view": [
+        {
+          "d": "11-04",
+          "pct": 5.87,
+          "tag": "阳",
+          "vol_r": 0.92,
+          "c": 12.09
+        },
+        {
+          "d": "11-05",
+          "pct": 2.65,
+          "tag": "阳",
+          "vol_r": 0.83,
+          "c": 12.41
+        },
+        {
+          "d": "11-06",
+          "pct": -3.3,
+          "tag": "阳",
+          "vol_r": 0.55,
+          "c": 12.0
+        },
+        {
+          "d": "11-09",
+          "pct": 2.25,
+          "tag": "阳",
+          "vol_r": 0.53,
+          "c": 12.27
+        },
+        {
+          "d": "11-10",
+          "pct": 1.39,
+          "tag": "阴",
+          "vol_r": 0.52,
+          "c": 12.44
+        },
+        {
+          "d": "11-11",
+          "pct": 2.89,
+          "tag": "阳",
+          "vol_r": 0.72,
+          "c": 12.8
+        },
+        {
+          "d": "11-12",
+          "pct": -0.78,
+          "tag": "阴",
+          "vol_r": 1.14,
+          "c": 12.7
+        },
+        {
+          "d": "11-13",
+          "pct": 5.28,
+          "tag": "阳",
+          "vol_r": 2.08,
+          "c": 13.37
+        },
+        {
+          "d": "11-16",
+          "pct": 10.02,
+          "tag": "板",
+          "vol_r": 2.07,
+          "c": 14.71
+        }
+      ]
+    }
+  ]
+}
